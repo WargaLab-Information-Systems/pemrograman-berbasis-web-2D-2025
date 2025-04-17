@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Profil Pribadi</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #bbeff8;
+      margin: 30px;
+    }
+
+    h1, h2 {
+      color: #000000;
+      text-align: center;
+    }
+
+    nav {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #000000;
+      font-weight: bold;
+    }
+
+    table {
+      width: 60%;
+      margin: 0 auto 20px auto;
+      border-collapse: collapse;
+      background-color: #ffffffd0;
+    }
+
+    table, td {
+      border: 1px solid #000000;
+      padding: 10px;
+    }
+
+    ul {
+      width: 60%;
+      margin: 0 auto 20px auto;
+    }
+
+    p {
+      width: 60%;
+      margin: 0 auto 20px auto;
+      background-color: #ffffffd0;
+      padding: 15px;
+      border-radius: 5px;
+    }
+
+    form {
+      width: 60%;
+      margin: 0 auto;
+      background-color: #ffffffd0;
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: #3086b2;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #3086b2;
+    }
+  </style>
+</head>
+<body>
+  <h1>Profil Pribadi</h1>
+  <h2>Data Diri</h2>
+  <table>
+    <tr><td>Nama</td><td>Imelda Tri Artika Dewi</td></tr>
+    <tr><td>Alamat</td><td>Ds. Konang Kec.  Galis Kab. Pamekasan</td></tr>
+    <tr><td>Tempat, Tanggal Lahir</td><td>Pamekasan, 06 September 2004</td></tr>
+    <tr><td>Nomor HP</td><td>0812xxxxxxx</td></tr>
+    <tr><td>Email</td><td>imeldatriartika@gmail.com</td></tr>
+  </table>
+
+  <h2>Riwayat Pendidikan</h2>
+  <ul> <!-- daftar list -->
+    <li>TK DHARMA WANITA KONANG</li> <!-- Ditem list -->
+    <li>SDN KKONANG 2 </li>
+    <li>SMPN 1 GALIS</li>
+    <li>SMKN 3 PAMEKASAN</li>
+    <li>UNIVERSITAS TRUNOJOYO MADURA</li>
+  </ul>
+
+  <h2>Hobi dan Minat</h2>
+  <ul>
+    <li>Membaca</li>
+    <li>Menulis</li>
+    <li>Masak</li>
+    <li>Main game</li>
+  </ul>
+
+  <h2>Pengalaman Akademik/Non-Akademik</h2>
+  <p>
+    Pernah mengikuti perlombaan bahasa Indonesia yang meraih medali perak. 
+  </p>
+
+  <h2>Kesan dan Harapan</h2>
+  <p>
+    Awal masuk universitas, rasanya campur aduk. Senang tapi juga gugup karena lingkungan baru.
+    Cita-cita saya adalah jadi orang yang bisa membantu masyarakat lewat teknologi. 
+    Harapannya bisa bikin inovasi bermanfaat dan tetap waras di tengah dunia yang makin ribet.
+  </p>
+
+  <h2>Form Tambahan</h2>
+  <form>
+    <p>Bahasa Pemrograman yang Dikuasai:</p>
+    <input type="text">
+
+    <p>Bahasa Asing yang Dikuasai:</p>
+    <input type="text" >
+
+    <p>Perangkat Lunak yang Sering Digunakan:</p>
+    <input type="checkbox"> VS Code
+    <input type="checkbox"> Figma
+    <input type="checkbox"> Apache Netbeans
+
+    <p>Sistem Operasi yang Digunakan:</p>
+    <input type="radio" name="os"> Windows
+    <input type="radio" name="os"> Linux
+    <input type="radio" name="os"> MacOS
+    
+    <p>nomor telepon </p>
+    <input type="number" >
+
+    <br><br>
+    <input type="submit" value="Kirim">
+  </form>
+  <nav>
+    <a href="pengalaman.html">Pengalaman Kuliah</a> |
+    <a href="blog.html">Blog</a>
+  </nav>
+</body>
+</html>
