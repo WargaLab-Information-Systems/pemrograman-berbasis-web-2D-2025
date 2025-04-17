@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAFE | KAWAI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="png"
+    href="logo.png">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Kawai Cafe</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#products">Products</a>
+            <a href="#Order">Order</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+        <div class="hero-content">
+            <h1>Welcome to Kawai Cafe</h1>
+            <p>Discover the best drinks and desserts in town</p>
+            <a href="#products" class="btn">Explore Our Menu</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>
+            Selamat datang di Kawai Café!
+            Kami adalah kafe kecil nan hangat yang terinspirasi dari gaya hidup lucu dan sederhana. Di sini, kamu bisa menikmati minuman yang segar dan dessert lucu, dan suasana cozy yang bikin betah berlama-lama.<br>
+            
+            Didirikan dengan cinta, Kawai Café hadir sebagai tempat untuk melepas penat, berbagi cerita, atau sekadar menikmati waktu sendiri. Interior kami yang estetik dan makanan yang menggugah selera dijamin bikin kamu merasa seperti di dunia pastel penuh kebahagiaan.<br>
+            
+            Setiap sajian kami dibuat dengan bahan berkualitas dan hati yang tulus, karena kami percaya:<br>
+            Makanan enak + suasana nyaman = hati senang <br>
+            
+            Datang dan rasakan sendiri pengalaman hangat dan manis di Kawai Café.<br>
+            Tempat di mana kamu bisa menjadi diri sendiri, dan selalu disambut dengan senyum:)
+        </p>
+    </section>
+
+    <section id="products" class="products">
+        <h2>Our Products</h2>
+        <div class="product-items">
+            <div class="product-item">
+                <img src="mochi.jpeg" alt="mochi">
+                <h3>Mochi Chibi</h3>
+                <p>Rp20.000</p>
+            </div>
+            <div class="product-item">
+                <img src="pancake.jpeg" alt="pancake">
+                <h3>Fluffy Flips</h3>
+                <p>Rp25.000</p>
+            </div>
+            <div class="product-item">
+                <img src="patty.jpeg" alt="patty">
+                <h3>Patty Pop</h3>
+                <p>Rp23.000 </p>
+            </div>
+            <div class="product-item">
+                <img src="pudding.jpeg" alt="pudding">
+                <h3>Moo Moo Milk Pudding</h3>
+                <p>Rp25.000 </p>
+            </div>
+            <div class="product-item">
+                <img src="rice bowl.jpeg" alt="rice bowl">
+                <h3>Bunny Bowl</h3>
+                <p>Rp27.000 </p>
+            </div>
+            <div class="product-item">
+                <img src="ice cream.jpeg" alt="ice cream">
+                <h3>Ice Dream</h3>
+                <p>Rp15.000 </p>
+            </div>
+            <div class="product-item">
+                <img src="milk.jpeg" alt="milk">
+                <h3>Moo Moo Milk</h3>
+                <p>Rp12.000 </p>
+            </div>
+            <div class="product-item">
+                <img src="milkshake.jpeg" alt="milkshake">
+                <h3>Shakey Wakey</h3>
+                <p>Rp18.000 </p>
+            </div>
+            <div class="product-item">
+                <img src="pink blue  Splash.jpeg" alt="Splash">
+                <h3>Pink Blue Splash</h3>
+                <p>Rp15.000 </p>
+            </div>
+            <div class="product-item">
+                <img src="air.jpeg" alt="air">
+                <h3>Air Mineral</h3>
+                <p>Rp5.000 </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="Order" class="order">
+        <h2>Place Your Order</h2>
+        <form action="#" method="post" class="order-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="menu">Select Menu:</label>
+            <select id="menu" name="menu" required>
+                <option value="">--Choose an item--</option>
+                <option value="mochi">Mochi Chibi</option>
+                <option value="pancake">Fluffy Flips</option>
+                <option value="patty">Patty Pop</option>
+                <option value="pudding">Moo Moo Milk Pudding</option>
+                <option value="bunny-bowl">Bunny Bowl</option>
+                <option value="ice-dream">Ice Dream</option>
+                <option value="milk">Moo Moo Milk</option>
+                <option value="shake">Shakey Wakey</option>
+                <option value="splash">Pink Blue Splash</option>
+                <option value="air">Air Mineral</option>
+            </select>
+
+            <label for="qty">Quantity:</label>
+            <input type="number" id="qty" name="qty" min="0" required>
+
+            <label for="notes">Additional Notes:</label>
+            <textarea id="notes" name="notes" rows="3" placeholder="less sugar, no ice"></textarea>
+
+            <button type="submit" class="btn">Order Now</button>
+        
+        </form>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Feel free to reach out to us for more information or to place an order.</p>
+        <p>Email: <a href="kawai@cafe.com">kawai@cafe.com</a></p>
+        <p>Phone: +62 123-456-7891 </p>
+        <p>Address: Jl. Kuliner No.24, Surabaya</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Kawai Cafe. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+    
