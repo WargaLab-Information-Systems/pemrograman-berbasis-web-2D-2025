@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Nusantara</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href=''>Coffe Nusantara</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#pesan">Pesan</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="wrapper">
+        <!--home-->
+        <section id="home" class="home-section">
+            <div class="home-content">
+                <h3>Tempat nongki anak muda</h3>
+                <h2>Coffe Nusantara</h2>
+                <p>Anda sedih? Galau? Gabut? Pengen ngopi tapi gak tau tempat nongki yang enak dan nyaman? Mending ke Kedai Coffe Nusantara aja! Kami menyediakan berbagai macam Coffe kekinian, bahkan kami juga menyediakan Burger spesial.</p>
+                <p>Untuk lebih tepatnya lanjut aja gass merapat. Lokasinya berada di Depan Masjid Istiqomah Wirobiting, Prambon, Sidoarjo.</p>
+                <p>Klik <a href="https://www.google.com/maps/place/Masjid+Istiqomah/@-7.4795114,112.5797693,17z/data=!3m1!4b1!4m6!3m5!1s0x2e780af8e746e547:0x7855924fa5ba8df!8m2!3d-7.4795114!4d112.5797693!16s%2Fg%2F11f1x6p36v?entry=ttu&g_ep=EgoyMDI1MDQwOS4wIKXMDSoASAFQAw%3D%3D">disini</a> untuk melihat lokasi!!!</p>
+            </div>
+            <div class="home-image">
+                <img src="homee.jpeg" />
+            </div>
+        </section>
+
+        <!--about-->
+        <section id="about" class="about-section">
+            <div class="about-content">
+                <h2>Tentang Kami</h2>
+                <p>Cafe Nusantara adalah tempat yang sempurna untuk menikmati kopi berkualitas tinggi dan makanan lezat.</p>
+                <p>Kami mengutamakan kualitas bahan dan suasana nyaman untuk menciptakan pengalaman ngopi terbaik bagi pelanggan kami. Mulai dari espresso klasik hingga makanan ringan modern, semua tersedia untuk kamu yang ingin bersantai atau berdiskusi santai bersama teman-teman.</p>
+            </div>
+        </section>
+
+        <!--menu-->
+        <section id="menu">
+            <h2 align="center">Menu</h2>
+
+            <!--makanan-->
+            <h3 class="teks">Makanan: </h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="burgerr.jpg" />
+                    <h3>Burger</h3>
+                    <p>Harga: Rp 15.000</p>
+                </div>
+                <div class="menu-item">
+                    <img src="roticoklatt.jpeg" />
+                    <h3>Roti Coklat</h3>
+                    <p>Harga: Rp 10.000</p>
+                </div>
+                <div class="menu-item">
+                    <img src="nasgorr.jpeg" />
+                    <h3>Nasi Goreng</h3>
+                    <p>Harga: Rp 20.000</p>
+                </div>
+                <div class="menu-item">
+                    <img src="kentangg.jpg" />
+                    <h3>Kentang Goreng</h3>
+                    <p>Harga: Rp 10.000</p>
+                </div>
+                <div class="menu-item">
+                    <img src="donatt.jpg" />
+                    <h3>Donat</h3>
+                    <p>Harga: Rp 6.000</p>
+                </div>
+                <div class="menu-item">
+                    <img src="pastaa.jpg" />
+                    <h3>Pasta</h3>
+                    <p>Harga: Rp 25.000</p>
+                </div>
+            </div>
+
+            <!--minuman-->
+            <h3 class="teks">Minuman: </h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="espreso.jpg" />
+                    <h3>Espresso</h3>
+                    <p>Harga: Rp 20.000</p>
+                </div>
+                <div class="menu-item">
+                    <img src="cappucino.jpg" />
+                    <h3>Cappiccino</h3>
+                    <p>Harga: Rp 20.000</p>
+                </div>
+                <div class="menu-item">
+                    <img src="tehh.jpeg" />
+                    <h3>Teh</h3>
+                    <p>Harga: Rp 7.000</p>
+                </div>
+                <div class="menu-item">
+                    <img src="juss.jpg" />
+                    <h3>Aneka Jus</h3>
+                    <p>Harga: Rp 10.000</p>
+                </div>
+                <div class="menu-item">
+                    <img src="kopsu.jpeg" />
+                    <h3>Kopi Susu</h3>
+                    <p>Harga: Rp 20.000</p>
+                </div>
+                <div class="menu-item">
+                    <img src="milkshakee.jpg" />
+                    <h3>Milkshake</h3>
+                    <p>Harga: Rp 20.000</p>
+                </div>
+            </div>
+        </section>
+
+        <!--pesan-->
+        <section id="pesan">
+            <h2 align="center">Pesan Sekarang</h2>
+            <form>
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Pesan</button>
+            </form>
+        </section>
+
+        <!--contact-->
+        <section id="contact">
+            <h2>Kontak Kami</h2>
+            <p>Email: yogadwi@gmail.com</p>
+            <p>Telepon: 0816-1563-5693 </p>
+        </section>
+    </div>
+</body>
+</html>
