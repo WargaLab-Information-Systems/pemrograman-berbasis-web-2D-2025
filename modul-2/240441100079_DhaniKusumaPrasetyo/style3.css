@@ -1,0 +1,150 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color:#FFEB55;
+}
+header{
+    position: sticky;
+    top:0px;
+    z-index: 2;
+}
+nav{
+    background-color: #ffffff;
+    padding: 10px;
+    display: flex;
+    padding-left:50px;
+
+}
+.logo{
+    object-fit: cover;
+}
+.geprek{
+    font-size: 30px;
+    display: inline;
+    font-family: "poppins";
+    text-justify: 1.5;
+    margin-left:50px ;
+    color: #B8001F;
+}
+.list{
+    display: flex;
+    margin-left:40% ;
+}
+nav ul li{
+    margin-top: 10px;
+    margin-left: 40px;
+    font-size: 20px;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: "poppins";
+    font-weight: bold;
+    color: #B8001F;
+}
+.gambar1{
+    width: 450px;
+    position:absolute;
+    margin-left: 80px;
+    margin-top: 90px;
+    animation: muter 30s linear infinite;
+    cursor: pointer;
+}
+@keyframes muter {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+#contact{
+    color:#FFEB55;
+}
+#Menu{
+    color: #B8001F;
+}
+#beranda{
+    color:#B8001F;
+
+}
+#contact:hover{
+    color:#B8001F;
+}
+#Menu:hover{
+    color:#FFEB55;
+}
+#beranda:hover{
+    color:#FFEB55;
+}
+.tabelIntro{
+    width: 1300px;
+    height: 300px;
+    margin-top: 120px ;
+    background-color: #ffffff;
+    border-radius: 30px;
+    border: none;
+}
+.welcome{
+    font-family:"allan";
+    font-size: 45px;
+    color: #B8001F;
+}
+#welcome{
+    margin-top: 40px;
+    margin-bottom: 0px;
+    margin-left: 500px;
+    margin-right: 0px ;
+    padding: 0px;
+}
+.jargon{
+    margin-bottom: 40px;
+    margin-top: 0px;
+    margin-left: 500px;
+    margin-right: 0px ;
+    font-family: "poppins";
+    color: #B8001F;
+    font-size: 35px;
+}
+#kontak{
+    color: black;
+}
+.bawah{
+    margin-left: 120px;
+    margin-top: 50px;
+}
+.h1contact{
+    font-size: 50px;
+    font-family: "poppins";
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.p1{
+    font-family: "poppins";
+    font-size: 24px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.medsos{
+    margin-top: 50px;
+    display: flex;
+    list-style: none;
+    position: absolute;
+    margin-left: 1100px;
+    
+}
+#sosmed{
+    text-decoration: none;
+    color: #B8001F;
+}
+ul li {
+    margin-left: 50px;
+}
+footer{
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+    position: sticky;
+    background-color:#B8001F;
+    padding: 30px;
+    margin-top:10%;
+    padding-left: 30%;
+    color: #FFEB55;   
+    font-family: "poppins";
+}
