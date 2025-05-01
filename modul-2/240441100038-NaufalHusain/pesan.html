@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pemesanan - Warung Makan Syahira</title>
+    <style>
+        /* Body */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-image: url("warung.jpg.png");
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+        }
+
+        /* Navigasi */
+        nav {
+            background-color: #a83232;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #f5b041;
+            color: black;
+        }
+
+        /* Section Pesan */
+        #pesan {
+            padding: 40px 20px;
+            background-color: #f9f3e7;
+            text-align: center;
+        }
+
+        #pesan h2 {
+            color: #a83232;
+            margin-bottom: 30px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        form label {
+            text-align: left;
+            font-weight: bold;
+        }
+
+        form input, form select, form button {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        form button {
+            background-color: #a83232;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #f5b041;
+            color: black;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #a83232;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="pesan.html">Pesan</a>
+        <a href="tentang.html">Tentang</a>
+    </nav>
+
+    <section id="pesan">
+        <h2>Form Pemesanan</h2>
+        <form>
+            <label for="nama">Atas Nama:</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan Nama " required>
+
+            <label for="menu-makan">Pilih Menu Makanan:</label>
+            <select id="menu-makan" name="menu-makan">
+                <option>Nasi Bebek Bumbu Hitam</option>
+                <option>Nasi Ayam Bumbu Hitam</option>
+                <option>Nasi Richese</option>
+                <option>Nasi Geprek</option>
+                <option>Nasi Ampela Ati</option>
+                <option>Nasi Lele</option>
+                <option>Nasi Telur</option>
+            </select>
+
+            <label for="menu-minum">Pilih Menu Minuman:</label>
+            <select id="menu-minum" name="menu-minum">
+                <option>Es Cao Merah</option>
+                <option>Es Cao Hitam</option>
+                <option>Es Teh</option>
+                <option>Pop Ice</option>
+                <option>Nutrisari</option>
+                <option>Marimas</option>
+                <option>Sisri</option>
+                <option>Air Mineral</option>
+            </select>
+
+            <button type="submit">Pesan Sekarang</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Warung Makan Syahira.</p>
+    </footer>
+</body>
+</html>
+
