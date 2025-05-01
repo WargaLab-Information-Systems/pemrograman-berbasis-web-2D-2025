@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Warung Makan Syahira</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-body p.fw-bold {
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body class="bg-light text-dark">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Warung Syahira</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#makanan">Makanan</a></li>
+          <li class="nav-item"><a class="nav-link" href="#minuman">Minuman</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="bg-success text-white text-center py-5">
+    <h1 class="display-5 fw-bold">Warung Makan Syahira</h1>
+    <p class="lead">Spesial Bumbu Hitam dengan cita rasa khas kuliner Nusantara</p>
+  </header>
+
+  <!-- Menu Makanan -->
+  <section id="makanan" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Menu Makanan</h2>
+      <div class="row g-4">
+        <!-- Makanan Cards -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm d-flex flex-column">
+            <img src="bebek.jpg" class="card-img-top" alt="Nasi Bebek">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Nasi Bebek Bumbu Hitam</h5>
+              <p class="card-text">Bebek empuk dengan bumbu hitam khas Madura.</p>
+              <p class="fw-bold mt-auto">Rp18.000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm d-flex flex-column">
+            <img src="richese.jpg" class="card-img-top" alt="Nasi Richese">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Nasi Richese</h5>
+              <p class="card-text">Ayam tepung dengan saus pedas manis dan keju lezat ala Richese.</p>
+              <p class="fw-bold mt-auto">Rp12.000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm d-flex flex-column">
+            <img src="geprek.jpg" class="card-img-top" alt="Nasi Geprek">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Nasi Geprek</h5>
+              <p class="card-text">Ayam geprek sambal bawang, pedasnya nampol!</p>
+              <p class="fw-bold mt-auto">Rp9.000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm d-flex flex-column">
+            <img src="ayam.jpg" class="card-img-top" alt="Nasi Ayam Hitam">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Nasi Ayam Bumbu Hitam</h5>
+              <p class="card-text">Ayam goreng dengan bumbu hitam khas kuliner nusantara.</p>
+              <p class="fw-bold mt-auto">Rp9.000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Minuman -->
+  <section id="minuman" class="py-5 bg-body-tertiary">
+    <div class="container">
+      <h2 class="text-center mb-4">Menu Minuman</h2>
+      <div class="row g-4">
+        <!-- Minuman Cards -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm d-flex flex-column">
+            <img src="caomerah.jpg" class="card-img-top" alt="Es Cao Merah">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Es Cao Merah</h5>
+              <p class="card-text">Minuman manis segar dengan isian cao merah.</p>
+              <p class="fw-bold mt-auto">Rp3.000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm d-flex flex-column">
+            <img src="caohitam.jpg" class="card-img-top" alt="Es Cao Hitam">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Es Cao Hitam</h5>
+              <p class="card-text">Minuman manis segar cao hitam dan gula aren.</p>
+              <p class="fw-bold mt-auto">Rp3.000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm d-flex flex-column">
+            <img src="teh.jpg" class="card-img-top" alt="Es Teh">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Es Teh</h5>
+              <p class="card-text">Teh manis gula murni.</p>
+              <p class="fw-bold mt-auto">Rp3.000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm d-flex flex-column">
+            <img src="susu.jpg.png" class="card-img-top" alt="Es Susu">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Es Susu</h5>
+              <p class="card-text">Susu segar dingin.</p>
+              <p class="fw-bold mt-auto">Rp3.000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Kontak Kami</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Informasi Kontak</h5>
+              <p><i class="bi bi-envelope-fill text-success me-2"></i>Email: <a href="mailto:naufalhusainhusain@email.com">warungsyahira@email.com</a></p>
+              <p><i class="bi bi-instagram text-danger me-2"></i>Instagram: <a href="https://instagram.com/naufalhsain" target="_blank">@warungsyahira</a></p>
+              <p><i class="bi bi-geo-alt-fill text-primary me-2"></i>Lokasi: Jln. Raya Trunojouyo, Telang gg.buntu</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-success text-white text-center py-3">
+    &copy; 2025 Warung Makan Syahira - Spesial Bumbu Hitam
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
