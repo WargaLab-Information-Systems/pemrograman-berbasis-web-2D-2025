@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Form Pesanan - Yaya Resto</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffe4ec;
+      color: #4e0032;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 50px auto;
+      background-color: #fff0f5;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #d63384;
+      margin-bottom: 40px;
+    }
+
+    .category {
+      margin-bottom: 30px;
+    }
+
+    .category h2 {
+      font-size: 22px;
+      color: #ad1457;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #f8bbd0;
+      padding-bottom: 5px;
+    }
+
+    label {
+      display: block;
+      margin: 5px 0;
+      font-size: 16px;
+      color: #6a1b9a;
+    }
+
+    .form-actions {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    button, .back-link {
+      padding: 12px 24px;
+      margin: 10px;
+      background-color: #d63384;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    button:hover, .back-link:hover {
+      background-color: #ad1457;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Form Pemesanan</h1>
+    <form>
+      <div class="category">
+        <h2>Ramen</h2>
+        <label><input type="checkbox" name="ramen" value="shio"> Shio Ramen <input type="number" name="qty_shio" min="1" max="10" placeholder="Qty"></label>
+        <label><input type="checkbox" name="ramen" value="shoyu"> Shoyu Ramen <input type="number" name="qty_shoyu" min="1" max="10" placeholder="Qty"> </label>
+        <label><input type="checkbox" name="ramen" value="miso"> Miso Ramen <input type="number" name="qty_miso" min="1" max="10" placeholder="Qty"> </label>
+        <label><input type="checkbox" name="ramen" value="tonkotsu"> Tonkotsu Ramen <input type="number" name="qty_tonkotsu" min="1" max="10" placeholder="Qty"> </label>
+        <label><input type="checkbox" name="ramen" value="kobe"> Kobe Ramen <input type="number" name="qty_kobe" min="1" max="10" placeholder="Qty"> </label>
+        <label><input type="checkbox" name="ramen" value="hakodate"> Hakodate Ramen <input type="number" name="qty_h" min="1" max="10" placeholder="Qty"> </label>
+      </div>
+
+      <div class="category">
+        <h2>Autentik</h2>
+        <label><input type="checkbox" name="authentic" value="geprek"> Ayam Geprek <input type="number" name="qty_geprek" min="1" max="10" placeholder="Qty"></label>
+        <label><input type="checkbox" name="authentic" value="tempong"> Nasi Tempong <input type="number" name="qty_tempong" min="1" max="10" placeholder="Qty"></label>
+        <label><input type="checkbox" name="authentic" value="pecel"> Nasi Pecel <input type="number" name="qty_pecel" min="1" max="10" placeholder="Qty"></label>
+        <label><input type="checkbox" name="authentic" value="soto"> Soto Ayam <input type="number" name="qty_soto" min="1" max="10" placeholder="Qty"></label>
+        <label><input type="checkbox" name="authentic" value="rawon"> Rawon <input type="number" name="qty_rawon" min="1" max="10" placeholder="Qty"></label>
+        <label><input type="checkbox" name="authentic" value="sate"> Sate Ayam <input type="number" name="qty_sate" min="1" max="10" placeholder="Qty"></label>
+      </div>
+
+      <div class="category">
+        <h2>Ice Cream</h2>
+        <label><input type="checkbox" name="icecream" value="matcha"> Matcha <input type="number" name="qty_matcha" min="1" max="10" placeholder="Qty"></label>
+        <label><input type="checkbox" name="icecream" value="cokelat"> Cokelat <input type="number" name="qty_coklat" min="1" max="10" placeholder="Qty"></label>
+        <label><input type="checkbox" name="icecream" value="vanilla"> Vanilla <input type="number" name="qty_vanilla" min="1" max="10" placeholder="Qty"></label>
+        <label><input type="checkbox" name="icecream" value="mix"> Mix <input type="number" name="qty_mix" min="1" max="10" placeholder="Qty"></label>
+      </div>
+
+      <div class="category">
+        <h2>Dessert</h2>
+        <label><input type="checkbox" name="dessert" value="cupcake_berry"> Cupcake Berry<input type="number" name="qty_cup" min="1" max="10" placeholder="Qty"></label>
+        <label><input type="checkbox" name="dessert" value="cupcake_strawberry"> Cupcake Strawberry<input type="number" name="qty_cuo" min="1" max="10" placeholder="Qty"></label>
+        <label><input type="checkbox" name="dessert" value="cake_strawberry"> Cake Strawberry<input type="number" name="qty_cake" min="1" max="10" placeholder="Qty"></label>
+        <label><input type="checkbox" name="dessert" value="cake_cokelat"> Cake Cokelat<input type="number" name="qty_cake" min="1" max="10" placeholder="Qty"></label>>
+      </div>
+
+      <div class="category">
+        <h2>Fresh Fruit Delight</h2>
+        <label><input type="checkbox" name="fruit" value="stroberi"> Stroberi<input type="number" name="qty_stroberi" min="1" max="10" placeholder="Qty"></label>
+        <label><input type="checkbox" name="fruit" value="mangga"> Mangga<input type="number" name="qty_mangga" min="1" max="10" placeholder="Qty"></label>
+        <label><input type="checkbox" name="fruit" value="delima"> Delima<input type="number" name="qty_delima" min="1" max="10" placeholder="Qty"></label>
+        <label><input type="checkbox" name="fruit" value="jambu"> Jambu<input type="number" name="qty_jambu" min="1" max="10" placeholder="Qty"></label>
+        <label><input type="checkbox" name="fruit" value="anggur"> Anggur<input type="number" name="qty_anggur" min="1" max="10" placeholder="Qty"></label>
+        <label><input type="checkbox" name="fruit" value="alpukat"> Alpukat<input type="number" name="qty_alpukat" min="1" max="10" placeholder="Qty"></label>
+        <label><input type="checkbox" name="fruit" value="melon"> Melon<input type="number" name="qty_melon" min="1" max="10" placeholder="Qty"></label>
+      </div>
+
+      <div class="category">
+        <h2>Ice Tea Magic</h2>
+        <label><input type="checkbox" name="tea" value="stroberi"> Stroberi<input type="number" name="qty_sroberi" min="1" max="10" placeholder="Qty"></label>
+        <label><input type="checkbox" name="tea" value="mangga"> Mangga<input type="number" name="qty_mangga" min="1" max="10" placeholder="Qty"></label>
+        <label><input type="checkbox" name="tea" value="lemon"> Lemon<input type="number" name="qty_lemon" min="1" max="10" placeholder="Qty"></label>
+        <label><input type="checkbox" name="tea" value="peach"> Peach<input type="number" name="qty_peach" min="1" max="10" placeholder="Qty"></label>
+        <label><input type="checkbox" name="tea" value="anggur"> Anggur<input type="number" name="qty_anggur" min="1" max="10" placeholder="Qty"></label>
+        <label><input type="checkbox" name="tea" value="melon"> Melon<input type="number" name="qty_melon" min="1" max="10" placeholder="Qty"></label>
+      </div>
+
+      <div class="category">
+        <h2>Coffee</h2>
+        <label><input type="checkbox" name="coffee" value="americano"> Americano<input type="number" name="qty_americano" min="1" max="10" placeholder="Qty"></label>
+        <label><input type="checkbox" name="coffee" value="hazelnut"> Hazelnut<input type="number" name="qty_hazelnut" min="1" max="10" placeholder="Qty"></label>
+        <label><input type="checkbox" name="coffee" value="latte"> Latte<input type="number" name="qty_latte" min="1" max="10" placeholder="Qty"></label>
+        <label><input type="checkbox" name="coffee" value="cappuccino"> Cappuccino<input type="number" name="qty_capcin" min="1" max="10" placeholder="Qty"></label>
+        <label><input type="checkbox" name="coffee" value="espresso"> Espresso<input type="number" name="qty_espresso" min="1" max="10" placeholder="Qty"></label>
+        <label><input type="checkbox" name="coffee" value="cold_brew"> Cold Brew<input type="number" name="qty_cold" min="1" max="10" placeholder="Qty"></label>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit">Simpan Pesanan</button>
+        <a href="home.html" class="back-link">← Kembali ke halaman Utama</a>
+      </div>
+
+    </form>
+  </div>
+
+</body>
+</html>
