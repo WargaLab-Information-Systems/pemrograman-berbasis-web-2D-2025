@@ -1,0 +1,16 @@
+p {
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+  }
+  
+.paragraf {
+    color: aliceblue;
+}
+#paragraf3 {
+    color: brown;
+}
+body {
+    background-color: azure;
+}

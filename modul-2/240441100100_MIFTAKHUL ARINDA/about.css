@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  
+body {
+  font-family: sans-serif;
+  background-color: beige;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+  
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid grey;
+}
+  
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff5722;
+}
+  
+.logo span {
+  color: grey;
+}
+  
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+  
+.nav-menu li a {
+  text-decoration: none;
+  color: grey;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+  
+.nav-menu li a:hover {
+  color: #ff5722;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 200px;
+  gap: 40px;
+  flex-wrap: wrap; /* untuk responsif */
+}
+
+.about-text {
+  flex: 1 1 55%;
+  color: #333;
+  text-align: left;
+}
+
+.about-text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.about-image {
+  flex: 20%;
+  text-align: right;
+}
+
+.about-image img {
+  max-width: 90%;
+  height: 600;
+  border-radius: 5px;
+}
