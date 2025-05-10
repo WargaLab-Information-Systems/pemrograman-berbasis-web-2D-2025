@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Frasinka</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="https://via.placeholder.com/32" />
+  </head>
+  <body class="bg-gray-400 text-white font-sans">
+
+    <!-- Header -->
+    <header class="bg-pink-400 p-6 shadow-lg sticky top-0 z-50">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-3xl font-bold">WELCOME TO</h1>
+        <nav class="space-x-6">
+          <a href="#about" class="hover:text-pink-600">Tentang</a>
+          <a href="#projects" class="hover:text-pink-600">Projek</a>
+          <a href="#contact" class="hover:text-pink-600">Kontak</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="flex flex-col items-center justify-center text-center py-20 px-4">
+      <h2 class="text-5xl font-bold mb-4">
+        Halo, Saya <span class="text-pink-400 underline decoration-abbrv">Frasinka </span>
+      </h2>
+      <p class="text-xl mb-8 max-w-2xl">
+        Saya adalah mahasiswa aktif semester dua Universitas <strong>TRUNOJOYO MADURA</strong> yang mengambil prodi SISTEM INFORMASI Fakultas TEKNIK dan saya angkatan 2024.
+      </p>
+      <a
+        href="#contact"
+        class="bg-pink-400 hover:bg-pink-600 text-white font-semibold py-3 px-6 rounded-full transition"
+        >Hubungi Saya</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="pt-0 pb-0 px-6 bg-pink-400">
+      <div class="container mx-auto grid md:grid-cols-2 gap-10 items-center">
+        <img
+          src="https://i.postimg.cc/fW5cVW5f/Whats-App-Image-2025-04-29-at-13-20-29.jpg/400"
+          alt="Foto Profil"
+          class="w-2/3 md:w-1/2 mx-auto"
+        />
+        <div>
+          <h3 class="text-4xl font-bold mb-4">Tentang Saya</h3>
+          <p class="text-lg leading-relaxed">
+            Saya adalah mahasiswa aktif SISTEM INFORMASI, di SI bukan hanya mempelajari tentang dunia IT saja namun disini kita belajar tentang management juga,adapun contoh matakuliah yang bisa diambil di SI.
+          </p>
+          <ul class="list-disc list-inside text-lg mt-4 space-y-2">
+            <li>ALPRO</li>
+            <li>E Commerce</li>
+            <li>PBW</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-20 px-6">
+  <div class="container mx-auto">
+    <h3 class="text-4xl font-bold text-center mb-12">Keahlian</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Project Card -->
+      <div class="bg-slate-700 p-6 rounded-lg shadow-lg hover:scale-105 hover:bg-slate-600 transition duration-300">
+        <h4 class="text-2xl font-bold mb-2">Fotografi </h4>
+        <p class="text-sm mb-4">Pernah magang di Rezaphotowork selama 6  dan belajar menguasai camera, dari set camera ke cara modeling dll.</p>
+      </div>
+      <div class="bg-slate-700 p-6 rounded-lg shadow-lg hover:scale-105 hover:bg-slate-600 transition duration-300">
+        <h4 class="text-2xl font-bold mb-2">Desain web </h4>
+        <p class="text-sm mb-4">Belajar Canva dari editing poster, ERD, dll dan pernah belajar corel cuman belum terlalu faham si hehe</p>
+      </div>
+      <div class="bg-slate-700 p-6 rounded-lg shadow-lg hover:scale-105 hover:bg-slate-600 transition duration-300">
+        <h4 class="text-2xl font-bold mb-2">Memasak</h4>
+        <p class="text-sm mb-4">Pernah memasak berbagai jenis masakan dari mie jbew,mie ayam, wonton ,dan aku juga sangat suka dengan memasak macam macam oseng</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 bg-pink">
+      <div class="container mx-auto text-center">
+        <h3 class="text-4xl font-bold mb-8">Kontak Saya</h3>
+        <p class="text-lg mb-6">Jila anda berminat dengan saya, anda bisa menghubungi email saya</p>
+
+        <!-- Contact Form -->
+        <form class="max-w-xl mx-auto mt-8 space-y-4">
+          <input type="text" placeholder="Nama Anda" class="w-full p-3 rounded bg-slate-700 border border-pink-400 focus:outline-none" />
+          <input type="email" placeholder="Email Anda" class="w-full p-3 rounded bg-slate-700 border border-pink-400 focus:outline-none" />
+          <textarea placeholder="Pesan Anda" class="w-full p-3 rounded bg-slate-700 border border-pink-400 h-32 focus:outline-none"></textarea>
+          <button type="submit" class="bg-pink-400 hover:bg-pink-500 px-6 py-3 rounded-full font-semibold">Kirim Pesan</button>
+        </form>
+
+        <!-- Optional Email Button -->
+        <div class="mt-6">
+          <a
+            href="mailto:josaanassya.com"
+            class="text-sm underline text-pink-400 hover:text-pink-500"
+            >Atau kirim langsung via Email</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-pink-400 text-center p-6 text-sm">
+      © 2025 Frasinka. Semua Hak Dilindungi.
+    </footer>
+  </body>
+</html>

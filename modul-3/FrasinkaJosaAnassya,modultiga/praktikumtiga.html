@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toko Roti Lezat</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .hero {
+      background: url('https://asset.kompas.com/crops/7bRHZ2hE8XPTp-FnrUUwAgG3p5A=/214x0:1834x1080/750x500/data/photo/2022/12/26/63a945b7e4ea7.jpg') no-repeat center center;
+      background-size: cover;
+      color: rgb(255, 255, 255);
+      padding: 100px 0;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    }
+    .produk img {
+      height: 200px;
+      object-fit: cover;
+    }
+    footer {
+      background-color: #fafaf8;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .bg-custom-color {
+      background-color: #FCEFCB;
+    }
+    .navbar-custom {
+      background-color: #FAD59A !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-light navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">🍞 RotiLezat</a>
+      <a class="btn btn-warning" href="#produk">Lihat Produk</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Roti Hangat, Cita Rasa Nikmat</h1>
+      <p class="lead">Pesan roti lezat kami langsung dari dapur ke rumah Anda!</p>
+      <a href="#produk" class="btn btn-warning btn-lg mt-3">Lihat Menu</a>
+    </div>
+  </header>
+
+  <!-- Promo Section -->
+  <section class="py-5 bg-custom-color text-center">
+    <div class="container">
+      <h2 class="fw-bold text-danger">🎉PROMO SPESIAL BULAN JANUARI🎉</h2>
+      <p class="lead mt-3 mb-4">
+        Dapatkan <strong>1 Roti Gratis</strong> untuk setiap pembelian minimal <strong>Rp50.000</strong>!
+      </p>
+      <p class="text-muted">Promo berlaku khusus di <strong>bulan kelahiran pemilik toko</strong>. Jangan lewatkan kesempatan manis ini!</p>
+      <a href="#produk" class="btn btn-warning mt-3">Belanja Sekarang</a>
+    </div>
+  </section>
+
+  <!-- Produk Section -->
+  <section id="produk" class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Produk Roti Kami</h2>
+      <div class="row g-4 produk">
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="https://asset.kompas.com/crops/gr6QbUeWOu3BaenbrUXEgnSpxPg=/8x6:992x662/1200x800/data/photo/2020/04/01/5e840176448de.jpg" class="card-img-top" alt="Roti Tawar">
+            <div class="card-body">
+              <h5 class="card-title">Roti Tawar Lembut</h5>
+              <p class="card-text">Roti ini mirip banget kaya hidup kamu... HAMBARRR yakan!! udah sama kaya kamu jadi wajib beli.</p>
+              <a href="https://wa.me/6285871668132" class="btn btn-outline-primary">Pesan Sekarang</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="https://i0.wp.com/www.tokomesin.com/wp-content/uploads/2017/10/roti-goreng-bantal-isi-coklat.jpg?w=570&ssl=1" class="card-img-top" alt="Roti Cokelat">
+            <div class="card-body">
+              <h5 class="card-title">Roti Isi Cokelat</h5>
+              <p class="card-text">Nah roti ini manis banget kaya aku, palagi isiannya ada coklatnya menambah selera makan bukan?.</p>
+              <a href="https://wa.me/6285871668132" class="btn btn-outline-primary">Pesan Sekarang</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="https://i0.wp.com/www.tokomesin.com/wp-content/uploads/2017/10/roti-isi-keju-tokomesin.jpg?w=700&ssl=1" class="card-img-top" alt="Roti Sobek">
+            <div class="card-body">
+              <h5 class="card-title">Roti Sobek Keju</h5>
+              <p class="card-text">Roti perpaduan keju tu enak banget kan??? yok beli roti yang ini, mana kejunya lembutttzz</p>
+              <a href="https://wa.me/6285871668132" class="btn btn-outline-primary">Pesan Sekarang</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-5 bg-custom-color text-center text-dark">
+    <div class="container">
+      <h2 class="fw-bold"href="#pesan">Ingin pesan dalam jumlah besar?</h2>
+      <p class="mb-4">Kami menerima pesanan untuk acara, katering, dan ulang tahun.</p>
+      <a href="https://wa.me/6285871668132" target="_blank" class="btn btn-warning btn-lg">Hubungi Kami via WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p class="mb-0">&copy; 2025 RotiLezat. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
