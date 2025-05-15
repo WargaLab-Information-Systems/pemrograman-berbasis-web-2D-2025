@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - ByteAcademy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    const registerForm = document.getElementById('registerForm');
+
+    registerForm.addEventListener('submit', function(e) {
+      e.preventDefault(); // Mencegah reload halaman
+
+      // Ambil data dari input
+      const email = document.getElementById('email').value;
+      const fullname = document.getElementById('fullname').value;
+      const password = document.getElementById('password').value;
+
+      // Tampilkan di konsol
+      console.log("Data Pendaftaran:");
+      console.log("Email:", email);
+      console.log("Nama Lengkap:", fullname);
+      console.log("Password:", password);
+
+      // (Optional) Tambahkan validasi atau simpan ke localStorage
+      alert("Registrasi berhasil disimulasikan!");
+
+      // Reset form
+      registerForm.reset();
+    });
+  </script>
+</head>
+<body>
+  <section class="min-h-screen grid md:grid-cols-2">
+    <div class="flex justify-center items-center bg-purple-700 p-10">
+      <img src="Gambar 5.png" alt="Pendaftaran" class="w-80">
+    </div>
+
+    <!-- Form Pendaftaran -->
+    <div class="flex justify-center items-center p-8">
+      <div class="w-full max-w-md space-y-6">
+        <h2 class="text-2xl font-bold text-gray-800">Mulai Hari Ini</h2>
+        <p class="text-sm text-gray-500">Menunggu besok? Bisa jadi kamu takkan pernah mulai.</p>
+
+        <form id="registerForm" class="space-y-4">
+          <div>
+            <label class="text-sm text-gray-600">Alamat Email</label>
+            <input id="email" type="email" placeholder="Masukkan Alamat Email Anda" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500" required>
+          </div>
+
+          <div>
+            <label class="text-sm text-gray-600">Nama Lengkap</label>
+            <input id="fullname" type="text" placeholder="Masukkan Nama Lengkap Anda" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500" required>
+          </div>
+
+          <div>
+            <label class="text-sm text-gray-600">Password</label>
+            <input id="password" type="password" placeholder="Masukkan Password Anda" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500" required>
+          </div>
+
+          <button type="submit" class="w-full bg-purple-600 text-white py-2 rounded-md hover:bg-purple-700 transition">Sign Up</button>
+        </form>
+
+        <div class="text-center text-gray-500">atau</div>
+
+        <button class="w-full flex items-center justify-center border border-gray-300 py-2 rounded-md hover:bg-gray-50">
+          <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" class="w-5 h-5 mr-2">
+          <span>Sign Up with Google</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+</body>
+</html>
