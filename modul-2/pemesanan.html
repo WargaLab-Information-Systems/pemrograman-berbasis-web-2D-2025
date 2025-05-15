@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<link rel="stylesheet" href="pemesanan.css">
+<head>
+  <meta charset="UTF-8">
+  <title>Pemesanan Makanan</title>
+  <style>
+   
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+   
+    nav {
+      background-color: #ffffff;
+      padding: 10px 20px;
+      border-bottom: 2px solid grey;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: normal;
+    }
+
+    nav a:hover,
+    nav a.active {
+      font-weight: bold;
+      color: #f7f7f8;
+    }
+
+    .social-icons {
+      margin-top: 5px;
+      font-size: 14px;
+    }
+
+   
+    .form-container {
+      max-width: 500px;
+      margin: 30px auto;
+      background-color: rgb(180, 18, 18);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container h3 {
+      margin-bottom: 20px;
+      text-align: center;
+      color: #333;
+    }
+
+    .form-container form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .form-container input,
+    .form-container select,
+    .form-container textarea {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #9a1717;
+      border-radius: 4px;
+    }
+
+    .form-container button {
+      padding: 12px;
+      background-color: #45be69;
+      color: rgb(117, 25, 25);
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .form-container button:hover {
+      background-color: #3d2e0d;
+    }
+  </style>
+</head>
+<body>
+
+ 
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="pemesanan.html" class="active">Pemesanan</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+
+  <section class="form-container">
+    <h3>Pemesanan Makanan</h3>
+    <form>
+      <input type="text" placeholder="Nama" required>
+
+      <select required>
+        <option value="">Pilih Makanan</option>
+        <option value="nasi_goreng">Nasi Goreng Ibu</option>
+        <option value="steak_daging">Steak Daging</option>
+        <option value="ayam_geprek">Ayam Geprek</option>
+        <option value="pasta">Pasta Carbonara</option>
+        <option value="nugget">Nugget Chicken</option>
+      </select>
+
+      <select required>
+        <option value="">Pilih Minuman</option>
+        <option value="cappucino">Cappuccino</option>
+        <option value="kopi_susu">Kopi Susu</option>
+        <option value="matcha">Matcha Latte</option>
+        <option value="es_teler">Es Teler</option>
+        <option value="es_buah">Es Buah Segar</option>
+      </select>
+
+      <input type="number" placeholder="Jumlah" min="1" required>
+      <textarea rows="3" placeholder="Catatan (opsional)"></textarea>
+      <button type="submit">Pesan</button>
+    </form>
+  </section>
+  <footer>
+    &copy; 2025 Kafe Rendy jaya. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
