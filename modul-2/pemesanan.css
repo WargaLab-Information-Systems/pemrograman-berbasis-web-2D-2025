@@ -1,0 +1,130 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #9e541d;
+  color: #3e2723;
+}
+
+
+nav {
+  background-color: #5e1212;
+  padding: 10px 20px;
+  border-bottom: 2px solid #000000;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav a {
+  text-decoration: none;
+  color: #5d4037;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #a1887f;
+  color: #fffbfb;
+}
+
+.social-icons {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #6d4c41;
+}
+
+.social-icons a {
+  color: #6d4c41;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.social-icons a:hover {
+  text-decoration: underline;
+}
+
+section.form-container {
+  max-width: 500px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+section.form-container h3 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #4e342e;
+}
+
+
+section.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+section.form-container input,
+section.form-container select,
+section.form-container textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #b41919;
+  border-radius: 6px;
+  background-color: #f8f4f4;
+}
+
+section.form-container textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+section.form-container button {
+  padding: 12px;
+  background-color: #6d4c41;
+  color: rgb(245, 241, 241);
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+section.form-container button:hover {
+  background-color: #15a50d;
+}
+
+
+
+
+  nav {
+    text-align: center;
+  }
+
+  section.form-container {
+    margin: 20px;
+    padding: 20px;
+  }
+  footer {
+    background-color: #4b3621;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
