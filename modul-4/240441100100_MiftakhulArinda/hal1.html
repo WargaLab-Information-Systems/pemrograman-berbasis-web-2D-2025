@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karina Porto - Halaman 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+
+    <header class="fixed top-0 left-0 h-screen w-64 bg-white dark:bg-gray-800 flex flex-col justify-between p-4 border-r dark:border-gray-700 z-50">
+        <div>
+            <div class="text-xl font-bold flex items-center gap-2 mb-8">
+                <img src="ASSET SESI 2/Logo 1.png" alt="foto karina" class="w-8 h-8 inline-block rounded-full">
+                Karina Porto
+            </div>
+            <nav class="flex flex-col space-y-4">
+                <a href="#" class="hover:text-yellow-400">Beranda</a>
+                <a href="#showcase" class="hover:text-yellow-400">Showcase</a>
+                <a href="#" class="hover:text-yellow-400">Study Case</a>
+                <a href="#" class="hover:text-yellow-400">Client</a>
+                <a href="#" class="hover:text-yellow-400">Tentang Kami</a>
+            </nav>
+        </div>
+        <div class="flex gap-2">
+            <button id="btnLight" class="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold rounded-lg px-4 py-2">Light</button>
+        <button id="btnDark" class="bg-gray-700 hover:bg-gray-800 text-white font-semibold rounded-lg px-4 py-2">Dark</button>
+        </div>
+    </header>
+
+    <section class="pt-20 max-w-6xl mx-auto p-8 grid md:grid-cols-2 gap-8 items-center">
+        <img src="ASSET SESI 2/Gambar 1 (1).png" alt="Karina Porto">
+        <div>
+            <h3 class="text-xl">I'm Karina</h3>
+            <h1 class="text-3xl font-bold">Front-End Developer & UI/UX</h1>
+            <p class="mt-4 text-gray-600">Membantu perusahaan dalam mengembangkan website atau mobile app untuk tumbuh lebih besar</p>
+            <div class="flex gap-x-8 bg-gray-100 dark:bg-gray-900 p-4">
+                <a href="hal2.html" class="px-8 py-2 items-center bg-yellow-400 font-bold text-white rounded hover:bg-yellow-500">Hire Me</a>
+                <div>
+                    <a href="#showcase" class="flex items-center gap-1 px-8 py-2 text-yellow-400 font-bold rounded hover:bg-gray-300">My Portfolio
+                    <img src="ASSET SESI 2/Icon 1 (1).png" alt="Panah" class="w-8 h-8 inline-block"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto p-8">
+        <h4 class="text-center mb-1">Keahlian Saya dalam Menerapkan Teknologi untuk Menyelesaikan Masalah Kompleks</h4>
+        <h2 class="text-2xl text-center font-bold mb-4">Skill Saya</h2>
+
+        <div class="flex flex-wrap gap-4 p-4">
+            <div class="flex items-center gap-2 bg-white dark:bg-gray-800 rounded-full px-4 py-2">
+                <div class="bg-purple-600 p-1 w-8 h-8 flex items-center justify-center rounded-full">
+                    <img src="ASSET SESI 2/icon-Figma.png" class="w-6 h-6">
+                </div>
+                <span class="text-gray-900 dark:text-white">Figma</span>
+            </div>
+            <div class="flex items-center gap-2 bg-white dark:bg-gray-800 px-4 py-2">
+                <div class="bg-purple-600 p-1 w-8 h-8 flex items-center justify-center rounded-full">
+                    <img src="ASSET SESI 2/icon-Html 5.png" class="w-6 h-6">
+                </div>
+                    <span class="text-gray-900 dark:text-white">HTML&CSS</span>
+            </div>
+            <div class="flex items-center gap-2 bg-white dark:bg-gray-800 rounded-full px-4 py-2">
+                <div class="bg-purple-600 p-1 w-8 h-8 flex items-center justify-center rounded-full">
+                    <img src="ASSET SESI 2/icon-SQL.png" class="w-6 h-6">
+                </div>
+                    <span class="text-gray-900 dark:text-white">MySQL</span>
+            </div>
+            <div class="flex items-center gap-2 bg-white dark:bg-gray-800 rounded-full px-4 py-2">
+                <div class="bg-purple-600 p-1 w-8 h-8 flex items-center justify-center rounded-full">
+                    <img src="ASSET SESI 2/icon-JavaScript.png" class="w-6 h-6">
+                </div>
+                    <span class="text-gray-900 dark:text-white">JavaScript</span>
+            </div>
+            <div class="flex items-center gap-2 bg-white dark:bg-gray-800 rounded-full px-4 py-2">
+                <div class="bg-purple-600 p-1 w-8 h-8 flex items-center justify-center rounded-full">
+                    <img src="ASSET SESI 2/icon-React.png" class="w-6 h-6">
+                </div>
+                    <span class="text-gray-900 dark:text-white">React</span>
+            </div>
+            <div class="flex items-center gap-2 bg-white dark:bg-gray-800 rounded-full px-4 py-2">
+                <div class="bg-purple-600 p-1 w-8 h-8 flex items-center justify-center rounded-full">
+                    <img src="ASSET SESI 2/icon-VS CODE.png" class="w-6 h-6">
+                </div>
+                    <span class="text-gray-900 dark:text-white">Visual Studio Code</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="showcase" class="max-w-6xl mx-auto p-8">
+        <div class="mb-20 flex justify-between items-start">
+            <div>
+                <h2 class="text-2xl font-bold mb-1">Proyek Terbaik Saya</h2>
+                <p class="text-gray-600">Beberapa hasil karya kami yang paling kami banggakan. Yuk, intip apa yang sudah kami buat!</p>
+            </div>
+            <a href="#showcase" class="flex items-center gap-1 font-bold text-black dark:text-white hover:underline">
+            Lihat Semua
+            <img src="ASSET SESI 2/Icon 1 (1).png" alt="Panah" class="w-4 h-4">
+             </a>
+        </div>
+        
+        <div class="mb-8 grid md:grid-cols-2 gap-4">
+            <div>
+                <h1 class="text-4xl font-bold">E-Commerce Website Design</h1>
+                <p class="text-gray-600">Website Development</p>
+                <h2 class="mt-2">Website e-commerce ini dibangun menggunakan React.js dengan dukungan React Router untuk navigasi dan Redux untuk manajemen state. 
+                    Desain responsif dan modern dibuat menggunakan Tailwind CSS, serta terintegrasi dengan API untuk menampilkan produk secara dinamis dan real-time.</h2>
+                <button class="mt-4 px-4 py-2 bg-yellow-400 text-white rounded hover:bg-yellow-500">Lihat Projek</button>
+            </div>
+            <img src="ASSET SESI 2/Gambar 2 (1).png" alt="E-Commerce Website Design" class="rounded-md">
+        </div>
+
+        <div class="mb-8 grid md:grid-cols-2 gap-4">
+            <img src="ASSET SESI 2/Gambar 3.png" alt="Online Course Landing Page" class="rounded-md">
+            <div>
+                <h1 class="text-4xl font-bold">Online Course Landing Page</h1>
+                <p class="text-gray-600">Website Development</p>
+                <h2 class="mt-2">Website ini dikembangkan menggunakan Laravel sebagai fondasi utama dalam pengelolaan logika backend.
+                    Dengan integrasi Filament, sistem dashboard admin dapat dibuat secara cepat, efisien dan user-friendly.
+                </h2>
+                <button class="mt-4 px-4 py-2 bg-yellow-400 text-white rounded hover:bg-yellow-500">Lihat Projek</button>
+            </div>
+        </div>
+
+        <div class="mb-8 grid md:grid-cols-2 gap-4">
+            <div>
+                <h1 class="text-4xl font-bold">Waffle Pay</h1>
+                <p class="text-gray-600">UI/UX Design | App Development</p>
+                <h2 class="mt-2">Waffle App dirancang dengan pendekatan UI/UX yang mengutamakan kesederhanaan dan efesiensi pengguna. Proses desain dimulai dengan riset kebutuhan pengguna dan pembuatan user persona untuk memahami tujuan aplikasi.</h2>
+                <button class="mt-4 px-4 py-2 bg-yellow-400 text-white rounded hover:bg-yellow-500">Lihat Projek</button>
+            </div>
+            <img src="ASSET SESI 2/Gambar 4.png" alt="Waffle Pay" class="rounded md">
+        </div>
+
+        <div class="mb-8 grid md:grid-cols-2 gap-4">
+            <img src="ASSET SESI 2/Gambar 5.png" alt="Chatbot Mobile App" class="rounded md">
+            <div>
+                <h1 class="text-4xl font-bold">Chatbot Mobile App</h1>
+                <p class="text-gray-600">UI/UX Design | App Development</p>
+                <h2 class="mt-2">Chatbot Mobile App ini dirancang dengan pendekatan Design Thinking, dimulai dari proses empati terhadap kebutuhan pengguna melalui observasi dan wawancara.</h2>
+                <button class="mt-4 px-4 py-2 bg-yellow-400 text-white rounded hover:bg-yellow-500">Lihat Projek</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#0E0B1E] text-gray-300 px-6 py-12 mt-10">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-10">
+            <div>
+                <div class="flex items-center mb-4">
+                <img src="ASSET SESI 2/logooo.png" alt="Logo Karina Porto" class="h-8 mr-2 object-contain">
+                </div>
+            <p class="text-sm leading-relaxed">
+                Bangun Ide Hebat Anda Bersama Saya — Siap <br />
+                Berkolaborasi dengan Keahlian yang Terbukti dan Fokus pada Hasil
+            </p>
+            </div>
+
+            <div>
+                <h3 class="text-white font-semibold mb-3">Tentang Saya</h3>
+                <ul class="space-y-1 text-sm">
+                    <li><a href="#" class="hover:text-white">Profil Singkat</a></li>
+                    <li><a href="#" class="hover:text-white">Layanan</a></li>
+                    <li><a href="#" class="hover:text-white">Proyek Terbaru</a></li>
+                    <li><a href="#" class="hover:text-white">Kontak</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-white font-semibold mb-3">Navigasi</h3>
+                <ul class="space-y-1 text-sm">
+                    <li><a href="#" class="hover:text-white">Blog / Artikel</a></li>
+                    <li><a href="#" class="hover:text-white">Testimoni</a></li>
+                    <li><a href="#" class="hover:text-white">Resume / CV</a></li>
+                    <li><a href="#" class="hover:text-white">Tools yang Dipakai</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-white font-semibold mb-3">Info Tambahan</h3>
+                <ul class="space-y-1 text-sm">
+                    <li><a href="#" class="hover:text-white">Privasi & Ketentuan</a></li>
+                    <li><a href="#" class="hover:text-white">Hak Cipta</a></li>
+                    <li><a href="#" class="hover:text-white">Sitemap</a></li>
+                    <li><a href="#" class="hover:text-white">Aksesibilitas</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="text-center text-xs text-gray-400 mt-10">
+            © 2025 Karina Porto. All rights reserved. Designed by Erlangga Satrya Husada.
+        </div>
+    </footer>
+
+    <script src="hal1.js"></script>
+</body>
+</html>
