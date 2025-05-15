@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Navigasi Restoran</title>
+    <link rel="stylesheet" href="rsetorancss.css">
+</head>
+<body>
+    <header>
+        <h1>Restoran Ramenaki</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#pesan">Pesan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="home-content">
+            <h1>RAMENAKI</h1>
+            <h2>Selamat Datang di Restoran Ramen</h2>
+            <p>‘Nikmatnya Santapan, Sejuta Kesan’</p>
+        </div>
+        <section id="about">
+            <h2>Tentang Kami</h2>
+            <p>Ramenaki adalah restoran Jepang full service yang menghadirkan variasi masakan Jepang dengan citarasa Indonesia yang Halal, gurih, dan lezat dengan harga terjangkau. Ramenaki merupakan salah satu restoran Jepang yang diminati oleh masyarakat Indonesia, yang menyediakan beragam menu seperti Ramen dengan berbagai pilihan tingkat kepedasan, Teppan dengan berbagai pilihan jenis daging, Bento yang dikemas dengan premium, serta makanan pendamping berupa beragam jenis menu olahan yang digoreng seperti Chicken Katsu dan Ebimaki. Kami adalah restoran yang menyajikan makanan berkualitas tinggi dengan bahan-bahan segar.</p>
+        </section>
+    </section>
+    <div id="menu">
+        <h2 align="center">Menu Kami</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="makan2.jpeg" alt="ramen">
+                <h3>Ramen Shoyu Katsu</h3>
+                <p>Rp.25.0000</p>
+            </div>
+            <div class="menu-item">
+                <img src="makan1.jpeg" alt="ramen">
+                <h3>Ramen Shoyu Pedas</h3>
+                <p>Rp.30.0000</p>
+            </div>
+            <div class="menu-item">
+                <img src="makan3.jpeg" alt="ramen">
+                <h3>Ramen Shoyu Kuah Kari</h3>
+                <p>Rp.30.0000</p>
+            </div>
+            <div class="menu-item">
+                <img src="dimsum1.jpeg" alt="ramen">
+                <h3>Dumpling</h3>
+                <p>Rp.15.0000</p>
+            </div>
+            <div class="menu-item">
+                <img src="dimsum2.jpeg" alt="ramen">
+                <h3>Wonton</h3>
+                <p>Rp.15.0000</p>
+            </div>
+            <div class="menu-item">
+                <img src="dimsum3.jpeg" alt="ramen">
+                <h3>Lumpia</h3>
+                <p>Rp.15.0000</p>
+            </div>
+            <div class="menu-item">
+                <img src="minum1.jpeg" alt="ramen">
+                <h3>Esteh</h3>
+                <p>Rp.5.0000</p>
+            </div>
+            <div class="menu-item">
+                <img src="minum2.jpeg" alt="ramen">
+                <h3>Es Jeruk</h3>
+                <p>Rp.7.0000</p>
+            </div>
+            <div class="menu-item">
+                <img src="minum3.jpeg" alt="ramen">
+                <h3>Dalgona</h3>
+                <p>Rp.12.0000</p>
+            </div>
+            <div class="menu-item">
+                <img src="minum4.jpeg" alt="ramen">
+                <h3>Es Boba</h3>
+                <p>Rp.11.0000</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="pesan">
+        <h2>Menu Pesanan</h2>
+            <form action="">
+                <div class="pesan-section">
+                    <h3>Makanan</h3>
+                    <label>
+                        <input type="checkbox" name="makanan" value="Ramen Shoyu Katsu"> Ramen Shoyu Katsu - Rp 25.000
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="makanan" value="Ramen Shoyu Pedas"> Ramen Shoyu Pedas - Rp 30.000
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="makanan" value="Ramen Shoyu Kuah Kari"> Ramen Shoyu Kuah Kari - Rp 30.000
+                    </label>
+                </div>
+
+                <div class="pesan-section">
+                    <h3>Dimsum</h3>
+                    <label>
+                        <input type="checkbox" name="makanan" value="Dumpling"> Dumpling - Rp 15.00
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="makanan" value="Wonton"> Wonton - Rp 15.000
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="makanan" value="Lumpia"> Lumpia - Rp 15.000
+                    </label>
+                </div>
+
+                <div class="pesan-section">
+                    <h3>Minuman</h3>
+                    <label>
+                        <input type="checkbox" name="minuman" value="Teh Manis"> Es Teh - Rp 5.000
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="minuman" value="Kopi Hitam"> Es Jeruk - Rp 7.000
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="minuman" value="Dalgona"> Dalgona - Rp 12.000
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="minuman" value="Es Boba"> Es Boba - Rp 11.000
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Nomor Telepon:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <button type="submit">Pesan Sekarang</button>
+            </form>
+    </section>
+</body>
+</html>

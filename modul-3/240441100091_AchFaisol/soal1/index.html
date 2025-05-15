@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portofolio | AchFaisol</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="mx-auto flex justify-between items-center p-4 bg-blue-500">
+      <div class="text-2xl font-bold ">Portofolio Saya</div>
+      <nav class="space-x-6">
+        <a href="#home" class="hover:text-blue-500 font-black">Beranda</a>
+        <a href="#skills" class="hover:text-blue-500 font-bold">Skills</a>
+        <a href="#projects" class="hover:text-blue-500 font-bold">Project</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="mx-auto py-20 px-20 flex flex-col-reverse md:flex-row items-center bg-blue-200">
+    <div class="md:w-1/2 flex justify-center">
+      <img src="profil.jpg" alt="Foto Profil" class="w-100 h-100 md:w-60 md:h-60 object-cover rounded-full shadow-xl hover:scale-105 transition-transform duration-300">
+    </div>
+
+    <div class="md:w-1/2 text-center md:text-left">
+      <h1 class="text-4xl md:text-5xl font-bold leading-snug mb-6">
+        Hai, saya 
+        <span class="inline-block transition-transform duration-300 transform hover:scale-110 text-indigo-600 font-bold cursor-pointer">
+          Ach Faisol
+        </span>
+      </h1>
+      
+      <p class="text-gray-600 mb-6 text-justify">
+        "Halo! Saya Faisol, seorang pembuat web dan desainer antarmuka pengguna yang mencintai keindahan dalam setiap detail. Dengan kombinasi antara coding dan kreativitas, saya membantu merealisasikan ide menjadi pengalaman digital yang hidup. Saya percaya bahwa setiap proyek adalah peluang untuk menciptakan sesuatu yang bermakna. Mari kita wujudkan karya luar biasa bersama!"
+      </p>
+      
+      <a href="#projects" class="inline-block bg-blue-600 text-white py-3 px-6 rounded-xl shadow-md hover:bg-blue-700 transition-all duration-300">
+        Lihat Project
+      </a>
+    </div>
+    </section>
+
+  <section id="skills" class="py-20 bg-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-10 transition transform hover:text-blue-500 duration-300">SKILL</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+        <div class="p-6 bg-gray-100 rounded-xl hover:scale-105 transition transform shadow-md">
+          <img src="html.jpeg" class="w-16 mx-auto mb-4" alt="HTML">
+          <h3 class="text-lg font-semibold">HTML5</h3>
+        </div>
+        <div class="p-6 bg-gray-100 rounded-xl hover:scale-105 transition transform shadow-md">
+          <img src="css.jpeg" class="w-16 mx-auto mb-4" alt="CSS">
+          <h3 class="text-lg font-semibold">CSS3</h3>
+        </div>
+        <div class="p-6 bg-gray-100 rounded-xl hover:scale-105 transition transform shadow-md">
+          <img src="python.jpeg" class="w-16 mx-auto mb-4" alt="TailwindCSS">
+          <h3 class="text-lg font-semibold">Python</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="py-20 mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12 transition transform hover:text-blue-500 duration-300">Project Terbaru</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-10">
+      
+      <div class="bg-white rounded-2xl overflow-hidden transition transform hover:scale-105 hover:shadow-2xl duration-300">
+        <img src="projek1.png" alt="Project 1" class="w-full">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Python</h3>
+          <p class="text-gray-600 text-justify">Project ini adalah program Python sederhana untuk mengelola data mahasiswa dan mata kuliah.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl overflow-hidden transition transform hover:scale-105 hover:shadow-2xl duration-300">
+        <img src="projek2.png" alt="Project 2" class="w-full">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Pembuatan CV</h3>
+          <p class="text-gray-600 text-justify">Ini adalah tampilan Curriculum Vitae (CV) atau resume digital yang menampilkan informasi pribadi, profil singkat, pengalaman kerja sebagai teknisi jaringan, serta keahlian dalam Python, HTML, dan jaringan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-blue-500 py-6">
+    <div class="mx-auto px-6 flex justify-between items-center">
+      <p class="font-bold">Ach Faisol</p>
+      <div class="flex space-x-4">
+        <a href="https://github.com/AchFaisol" class="hover:text-blue-500"><i class="fab fa-github"></i>GitHub</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
