@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak Karina</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+    
+  </head>
+  
+  <body class="bg-white dark:bg-gray-900 flex items-center justify-center min-h-screen px-4">
+    <button id="theme-toggle" class="text-gray-700 dark:text-white font-medium hover:text-yellow-400">
+          🌙 Mode
+        </button>
+    <div
+      class="bg-white dark:bg-gray-900 max-w-6xl w-full p-8 md:p-12 rounded-lg shadow-md grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+    >
+    
+      <div class="flex flex-col items-start justify-center">
+        <div class="relative w-full max-w-xs h-auto">
+          <div
+            class="absolute top-0 left-0 w-full h-full rounded-t-[120px] bg-yellow-300 -z-10"
+          ></div>
+          <img
+            src="Gambar 1 (1).png"
+            alt="Karina"
+            class="relative z-10 w-full"
+          />
+        </div>
+        <h2 class="text-base text-gray-700 dark:text-white font-medium hover:text-yellow-400">
+          Karina siap membantu mewujudkan ide dan impian anda
+        </h2>
+        <p class="text-base text-gray-700 dark:text-white font-medium hover:text-yellow-400">
+          Dimulai dari riset hingga pengerjaan proyek nyata yang berdampak dan
+          bermakna
+        </p>
+      </div>
+      <form id="kontakForm" class="flex flex-col gap-4">
+        <div>
+          <label class="block text-base text-gray-700 dark:text-white font-medium hover:text-yellow-400 mb-1"
+            >Nama Lengkap</label
+          >
+          <input
+            type="text"
+            id="nama"
+            placeholder="Masukkan nama Anda"
+            class="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          />
+        </div>
+        <div>
+          <label class="block text-base text-gray-700 dark:text-white font-medium hover:text-yellow-400 mb-1"
+            >Alamat Email</label
+          >
+          <input
+            type="email"
+            id="email"
+            placeholder="Masukkan email Anda"
+            class="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          />
+        </div>
+        <div>
+          <label class="block text-base text-gray-700 dark:text-white font-medium hover:text-yellow-400 mb-1"
+            >Deskripsi Proyek</label
+          >
+          <textarea
+            id="deskripsi"
+            placeholder="Ceritakan sedikit tentang proyek Anda"
+            rows="4"
+            class="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          ></textarea>
+        </div>
+        <div>
+          <label class="block text-base text-gray-700 dark:text-white font-medium hover:text-yellow-400 mb-1"
+            >Kisaran Anggaran</label
+          >
+          <input
+            type="text"
+            id="anggaran"
+            placeholder="Berapa anggaran Anda?"
+            class="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          />
+        </div>
+        <button
+          type="submit"
+          class="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-3 rounded-md transition duration-200"
+        >
+          Kirim Pesan
+        </button>
+      </form>
+    </div>
+
+    <script>
+      console.log(document.documentElement.classList);
+      const themeToggle = document.getElementById("theme-toggle");
+      const html = document.documentElement;
+
+      function updateToggleText() {
+        if (html.classList.contains("dark")) {
+          themeToggle.textContent = "☀ Mode";
+        } else {
+          themeToggle.textContent = "🌙 Mode";
+        }
+      }
+
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        html.classList.add("dark");
+      }
+      updateToggleText();
+
+      themeToggle.addEventListener("click", () => {
+        html.classList.toggle("dark");
+        if (html.classList.contains("dark")) {
+          localStorage.theme = "dark";
+        } else {
+          localStorage.theme = "light";
+        }
+        updateToggleText();
+      });
+    </script>
+
+    <script>
+      const form = document.getElementById("kontakForm");
+
+      form.addEventListener("submit", function (e) {
+        const nama = document.getElementById("nama").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const deskripsi = document.getElementById("deskripsi").value.trim();
+        const anggaran = document.getElementById("anggaran").value.trim();
+
+        if (!nama || !email || !deskripsi || !anggaran) {
+          alert("Harap isi semua bidang formulir!");
+          e.preventDefault();
+        } else if (!validateName(nama)) {
+          alert("Nama hanya boleh berisi huruf dan spasi!");
+          e.preventDefault();
+        } else if (!validateEmail(email)) {
+          alert("Alamat email tidak valid!");
+          e.preventDefault();
+        }
+      });
+
+      function validateEmail(email) {
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return regex.test(email);
+      }
+
+      function validateName(nama) {
+        const regex = /^[A-Za-z\s]+$/;
+        return regex.test(nama);
+      }
+    </script>
+  </body>
+</html>
