@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Karina Porto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .dark-mode {
+      background-color: #121212 !important;
+      color: white !important;
+    }
+
+    .dark-mode .form-control,
+    .dark-mode input,
+    .dark-mode textarea {
+      background-color: #2c2c2c !important;
+      color: white !important;
+      border: 1px solid #555;
+    }
+
+    .dark-mode .form-label {
+      color: white !important;
+    }
+
+    .dark-mode .btn-warning {
+      background-color: #ffc107;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+<div class="container my-5">
+  <div class="row align-items-center">
+
+    <div class="col-md-6 text-center">
+      <div class="mb-3">
+        <img src="Gambar 1 (1).png" alt="Karina" class="img-fluid" style="max-height: 300px;">
+      </div>
+      <h5 class="fw-bold">Karina siap membantu mewujudkan ide dan impian anda</h5>
+      <p class="text-muted">
+        Dimulai dari riset hingga pengerjaan projek nyata yang berdampak dan bermakna
+      </p>
+    </div>
+
+    <div class="col-md-6">
+      <form id="projectForm">
+        <div class="mb-3">
+          <label class="form-label">Nama Lengkap</label>
+          <input type="text" class="form-control" id="name" placeholder="Masukkan nama Anda">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Alamat Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Masukkan email Anda">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Deskripsi Proyek</label>
+          <input type="text" class="form-control" id="project" placeholder="Ceritakan sedikit tentang proyek Anda">
+        </div>
+        <div class="mb-4">
+          <label class="form-label">Kisaran Anggaran</label>
+          <input type="text" class="form-control" id="budget" placeholder="Berapa anggaran Anda?">
+        </div>
+        <button type="submit" class="btn btn-warning px-4 py-2">Kirim Pesan</button>
+        <a href="Beranda.html" class="btn btn-warning px-4 py-2">Kembali Ke Beranda</a>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<!-- bagian tombol dark mode ku-->
+<div style="position: fixed; bottom: 20px; right: 20px; z-index: 9999;">
+  <button id="toggleMode" class="btn btn-dark">Dark Mode</button>
+</div>
+
+<!--ini bagian validasiku-->
+<script>
+  document.getElementById("projectForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const project = document.getElementById("project").value.trim();
+    const budget = document.getElementById("budget").value.trim();
+
+    if (!name || !email || !project || !budget) {
+      alert("Semua kolom harus diisi!");
+      return;
+    }
+
+    const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    if (!email.match(emailPattern)) {
+      alert("Email tidak valid!");
+      return;
+    }
+
+    alert("Pesan berhasil dikirim!");
+  });
+
+  // ini bagian Toggle Dark Mode
+  const toggleButton = document.getElementById('toggleMode');
+  const body = document.body;
+
+  toggleButton.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+
+    if (body.classList.contains('dark-mode')) {
+      toggleButton.textContent = 'Light Mode';
+      toggleButton.classList.remove('btn-dark');
+      toggleButton.classList.add('btn-light');
+    } else {
+      toggleButton.textContent = 'Dark Mode';
+      toggleButton.classList.remove('btn-light');
+      toggleButton.classList.add('btn-dark');
+    }
+  });
+</script>
+
+</body>
+</html>

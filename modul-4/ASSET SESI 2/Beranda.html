@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Karina Porto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+  .footer-gradient {
+    background: linear-gradient(135deg, #0d0d25 0%, #1a1a40 100%);
+  }
+    /* style dark modeku */
+    body.dark-mode {
+      background-color: #121212;
+      color: white;
+    }
+
+
+    body.dark-mode .bg-light {
+      background-color: #1f1f1f !important;
+    }
+
+    body.dark-mode .card {
+      background-color: #2c2c2c;
+      color: white;
+    }
+
+    body.dark-mode .text-muted {
+      color: #ccc !important;
+    }
+
+    body.dark-mode a.text-dark {
+      color: #f0f0f0 !important;
+    }
+
+    body.dark-mode .navbar {
+      background-color: #1a1a1a !important;
+      background-color: #f6f0f0 !important;
+    }
+
+    body.dark-mode .btn-warning {
+      background-color: #f0ad4e;
+      border-color: #f0ad4e;
+    }
+
+    .dark-toggle-btn {
+      position: absolute;
+      right: 33rem;
+      top: 1rem;
+      z-index: 1000;
+    }
+
+  /* membuat style dalam icon card*/
+.card img {
+  padding: 8px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover cover supaya ketika di klik ada efeknya */
+.card img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Warna background art  */
+.card img[alt="Figma"] {
+  background-color: #a259ff;
+}
+
+.card img[alt="HTML5"] {
+  background-color: #f16529;
+}
+
+.card img[alt="CSS"] {
+  background-color: #2965f1;
+}
+
+.card img[alt="MySQL"] {
+  background-color: #00758f;
+}
+
+.card img[alt="JavaScript"] {
+  background-color: #f7df1e;
+}
+
+.card img[alt="React"] {
+  background-color: #61dafb;
+}
+
+.card img[alt="Visual Studio Code"] {
+  background-color: #007acc;
+}
+
+  </style>
+<body>
+<div class="d-flex">
+  <!-- Sidebar -->
+  <div class="bg-light p-3" style="width: 200px; min-height: 100vh;">
+    <a class="navbar-brand mb-4 d-block" href="#">
+      <img src="Logo 1.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top me-2">
+      <span>Karina Porto</span>
+    </a>
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="Beranda.html">Beranda</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" aria-disabled="true">Showcase</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" aria-disabled="true">Study Case</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" aria-disabled="true">Client</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" aria-disabled="true">Tentang Kami</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Konten utama -->
+  <div class="flex-grow-1">
+    <div class="dark-toggle-btn">
+      <button id="toggleThemeBtn" class="btn btn-dark mt-3 ms-3">Mode Gelap</button>
+    </div>
+
+
+  <div class="container my-5">
+    <div class="row align-items-center">
+      <div class="col-md-6 d-flex justify-content-center">
+        <img src="Gambar 1 (1).png" class="img-fluid rounded" alt="Karina Image">
+      </div>
+      <div class="col-md-6">
+        <p class="mb-1">I'm Karina</p>
+        <h1 class="fw-bold">Front-End Developer<br>& UI/UX</h1>
+        <p class="text-muted">
+          Membantu perusahaan dalam mengembangkan website atau mobile app untuk tumbuh lebih besar.
+        </p>
+        <div class="d-flex gap-3 mt-3">
+          <a href="index.html" class="btn btn-warning px-4 py-2">Hire Me</a>
+          <a href="#" class="text-decoration-none align-self-center">My Portfolio →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <p class="text-muted">Keahlian Saya dalam Menerapkan Teknologi untuk Menyelesaikan Masalah Kompleks</p>
+      <h2 class="fw-bold mb-5">Skill Saya</h2>
+
+      <div class="row g-3 justify-content-center">
+
+        <div class="col-6 col-md-3 col-lg-2">
+         <div class="card shadow-sm rounded-4 p-3 d-flex flex-column align-items-center justify-content-center text-center">
+            <img src="icon-Figma.png" class="img-fluid mb-2" alt="Figma" width="40">
+            <p class="mb-0"><b>Figma</b></p>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="card shadow-sm rounded-4 p-3 d-flex flex-column align-items-center justify-content-center text-center">
+            <img src="icon-Html 5.png" class="img-fluid mb-2" alt="HTML5" width="40">
+            <p class="mb-0">HTML 5</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="card shadow-sm rounded-4 p-3 d-flex flex-column align-items-center justify-content-center text-center">
+            <img src="icon-css.png" class="img-fluid mb-2" alt="CSS" width="40">
+            <p class="mb-0">CSS</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="card shadow-sm rounded-4 p-3 d-flex flex-column align-items-center justify-content-center text-center">
+            <img src="icon-SQL.png" class="img-fluid mb-2" alt="MySQL" width="40">
+            <p class="mb-0">MYSQL</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="card shadow-sm rounded-4 p-3 d-flex flex-column align-items-center justify-content-center text-center">
+            <img src="icon-JavaScript.png" class="img-fluid mb-2" alt="JavaScript" width="40">
+            <p class="mb-0">Javascript</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="card shadow-sm rounded-4 p-3 d-flex flex-column align-items-center justify-content-center text-center">
+            <img src="icon-React.png" class="img-fluid mb-2" alt="React" width="40">
+            <p class="mb-0">React</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="card shadow-sm rounded-4 p-3 d-flex flex-column align-items-center justify-content-center text-center">
+            <img src="icon-VS CODE.png" class="img-fluid mb-2" alt="Visual Studio Code" width="40">
+            <p class="mb-0">Visual Studio Code</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg-light">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <div>
+        <h3 class="fw-bold">Proyek Terbaik Saya</h3>
+        <p class="text-muted mb-0">Beberapa hasil karya kami yang paling kami banggakan. Yuk, intip apa yang sudah kami buat!</p>
+      </div>
+      <a href="#" class="text-decoration-none text-dark">
+        Lihat Semua <span class="ms-1">↗</span>
+      </a>
+    </div>
+
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h4 class="fw-bold">E–Commerce Website Design</h4>
+        <p class="text-primary small">Website Development</p>
+        <p class="text-muted">
+          Website e-commerce ini dibangun menggunakan React.js dengan dukungan React Router untuk navigasi dan Redux untuk manajemen state. Desain responsif dan modern dibuat menggunakan Tailwind CSS, serta terintegrasi dengan API untuk menampilkan produk secara dinamis dan real-time.
+        </p>
+        <a href="#" class="btn btn-warning rounded-pill px-4">Lihat Proyek</a>
+      </div>
+
+      <div class="col-md-6 text-center">
+        <img src="Gambar 2 (1).png" alt="Projek gambar 2" class="img-fluid rounded-4 shadow-sm">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <div class="col-md-6 text-center">
+        <img src="Gambar 3.png" alt="ke3" class="img-fluid rounded-4 shadow-sm">
+      </div>
+
+      <div class="col-md-6">
+        <h4 class="fw-bold">Online Course Landing Page</h4>
+        <p class="text-primary small">Website Development</p>
+        <p class="text-muted">
+          Website ini dikembangkan menggunakan Laravel sebagai fondasi utama dalam pengelolaan logika backend. Dengan integrasi Filament, sistem dashboard admin dapat dibuat secara cepat, efisien, dan user-friendly. Data disimpan dan dikelola menggunakan MySQL, sementara PHP berperan sebagai bahasa pemrograman inti yang menjalankan seluruh proses server-side. Website ini juga dilengkapi dengan fitur autentikasi, CRUD dinamis, serta validasi data yang kuat untuk memastikan keandalan dan keamanan sistem. Antarmuka dibuat responsif agar nyaman diakses dari berbagai perangkat.
+        </p>
+        <a href="#" class="btn btn-warning rounded-pill px-4">Lihat Proyek</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <section class="py-5 bg-light">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <div>
+<div class="row align-items-center">
+      <div class="col-md-6">
+        <h4 class="fw-bold">Waffle Pay</h4>
+        <p class="text-primary small">UI/UX Design • App Development</p>
+        <p class="text-muted">
+          Waffle App dirancang dengan pendekatan UI/UX yang mengutamakan kesederhanaan dan efisiensi pengguna. Proses desain dimulai dengan riset kebutuhan pengguna dan pembuatan user persona untuk memahami tujuan aplikasi, Wireframe dan user flow dikembangkan menggunakan Figma, diikuti dengan desain high-fidelity yang mengedepankan konsistensi visual dan aksesibilitas. Prototipe interaktif dibuat untuk pengujian usability, memastikan setiap fitur dapat diakses dengan mudah dan intuitif. Desain responsif disiapkan agar optimal di berbagai ukuran layar, terutama perangkat mobile.
+        </p>
+        <a href="#" class="btn btn-warning rounded-pill px-4">Lihat Proyek</a>
+      </div>
+
+      <div class="col-md-6 text-center">
+        <img src="Gambar 4.png" alt="Projek gambar 2" class="img-fluid rounded-4 shadow-sm">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <div class="col-md-6 text-center">
+        <img src="Gambar 5.png" alt="E-Commerce Project" class="img-fluid rounded-4 shadow-sm">
+      </div>
+
+      <div class="col-md-6">
+        <h4 class="fw-bold">Chatbot Mobile App</h4>
+        <p class="text-primary small">UI/UX Design • App Development</p>
+        <p class="text-muted">
+          Chatbot Mobile App ini dirancang dengan pendekatan Design Thinking, dimulai dari proses empati terhadap kebutuhan pengguna melalui observasi dan wawancara. Setelah itu, dilakukan perumusan masalah, pembuatan ide solusi, serta sketsa wireframe. Desain antarmuka dikembangkan menggunakan Figma, dengan fokus pada interaksi percakapan yang intuitif dan ramah pengguna. Prototipe diuji melalui usability testing untuk memastikan alur obrolan mudah dipahami. Desain akhir dibuat responsif, dengan perhatian pada tipografi, kontras, dan kecepatan akses, sehingga mendukung pengalaman pengguna yang optimal di perangkat mobile.
+        </p>
+        <a href="#" class="btn btn-warning rounded-pill px-4">Lihat Proyek</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-dark text-light py-5">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4 mb-4">
+        <img src="Logo 1.png" alt="Logo" width="40" height="35" class="d-inline-block align-text-top">
+        Karina Porto
+        <p>Bangun Ide Hebat Anda Bersama Saya - Siap Bekerjasama dengan Kreativitas yang Terlatih dan Fokus pada Hasil</p>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <h6 class="text-uppercase fw-bold">Tentang Saya</h6>
+        <ul class="list-unstyled">
+          <li><a href="profil" class="text-light text-decoration-none">Profil Singkat</a></li>
+          <li><a href="layanan" class="text-light text-decoration-none">Layanan</a></li>
+          <li><a href="proyek" class="text-light text-decoration-none">Proyek Terbaru</a></li>
+          <li><a href="kontak" class="text-light text-decoration-none">Kontak</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <h6 class="text-uppercase fw-bold">Navigasi</h6>
+        <ul class="list-unstyled">
+          <li><a href="blog" class="text-light text-decoration-none">Blog / Artikel</a></li>
+          <li><a href="testimoni" class="text-light text-decoration-none">Testimoni</a></li>
+          <li><a href="cv" class="text-light text-decoration-none">Resume / CV</a></li>
+          <li><a href="tools" class="text-light text-decoration-none">Tools yang Dipakai</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <h6 class="text-uppercase fw-bold">Info Tambahan</h6>
+        <ul class="list-unstyled">
+          <li><a href="privasi" class="text-light text-decoration-none">Privasi & Ketentuan</a></li>
+          <li><a href="hakcipta" class="text-light text-decoration-none">Hak Cipta</a></li>
+          <li><a href="sitemap" class="text-light text-decoration-none">Sitemap</a></li>
+          <li><a href="aksesibilitas" class="text-light text-decoration-none">Aksesibilitas</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="text-center mt-4 pt-3 border-top border-secondary">
+      <small>© 2025 Karina Porto. All rights reserved. Designed by Erlangga Satrya Husada.</small>
+    </div>
+  </div>
+</section>
+
+ <script>
+    const toggleBtn = document.getElementById("toggleThemeBtn");
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+      toggleBtn.textContent = document.body.classList.contains("dark-mode")
+        ? " Mode Terang"
+        : " Mode Gelap";
+    });
+  </script>
+  
+</body>
+</html>
