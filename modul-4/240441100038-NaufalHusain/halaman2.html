@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+
+</head>
+<style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .dark-mode {
+      background-color: #000;
+      color: white;
+    }
+    
+    .dark-mode a {
+      color: #fff;
+    }
+    .dark-mode footer {
+      background-color: #000;
+    }
+    .dark-mode header .text-black {
+      color: black; /* Keep header text color black in dark mode */
+    }
+    .dark-mode main {
+      background-color: #000; /* Ensure main content has dark background */
+    }
+    .dark-mode p, .dark-mode h1, .dark-mode h2, .dark-mode h3 {
+      color: white; /* Ensure text is white in dark mode */
+    }
+    .dark-mode .bg-white {
+      background-color: #2a2a2a; /* Change white backgrounds to a darker shade */
+    }
+    .dark-mode .text-gray-500 {
+      color: #b0b0b0; /* Change gray text to a lighter shade */
+    }
+    .dark-mode .skill-section {
+      background-color: #000; /* Dark background for the skill section */
+    }
+    .dark-mode .container{
+      background-attachment: #000;
+    }
+    .dark-mode input, .dark-mode textarea {
+        background-color: #2a2a2a;
+        color: white;
+        border-color: #444;
+    }
+
+    .dark-mode input::placeholder, .dark-mode textarea::placeholder {
+        color: #aaa;
+    }
+  </style>
+<body class="container">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+      <nav class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex items-center justify-between h-16">
+        <div class="flex items-center space-x-2">
+          <img src="Logo 1.png" alt="Logo" class="w-6 h-6" />
+          <span class="font-semibold text-lg select-none">Karina Porto</span>
+        </div>
+        <ul class="hidden sm:flex space-x-8 text-sm font-normal text-black" >
+          <li><a href="index.html" class="dark:text-[#FFD966]">Beranda</a></li>
+          <li><a href="#" class="hover:text-gray-700 transition">Showcase</a></li>
+          <li><a href="#" class="hover:text-gray-700 transition">Study Case</a></li>
+          <li><a href="#" class="hover:text-gray-700 transition">Client</a></li>
+          <li><a href="#" class="hover:text-gray-700 transition">Tentang Kami</a></li>
+          <button id="toggleDarkMode" class="bg-[#FFD966] text-black rounded-full px-4 py-1">Mode🌞</button>
+        </ul>
+      </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="mx-24 my-16 flex justify-between">
+        <div class="my-2 mr-20" style="width: 40%;">
+            <img src="Gambar 1 (1).png" class="w-auto h-auto">
+            <p class="py-3 text-xl font-semibold text-justify">
+                Karina siap membantu mewujudkan ide dan impian anda
+            </p>
+            <p class="text-gray-500">
+                Dimulai dari riset hingga pengerjaan proyek nyata yang berdampak dan bermakna
+            </p>
+        </div>
+
+        <div class="my-2 ml-20" style="width: 40%;">
+            <form id="projectForm" class="space-y-5">
+                <div>
+                    <label for="nama" class="block font-semibold">Nama Lengkap</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" class="mt-1 w-full p-3 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-gray-400">
+                </div>
+
+                <div>
+                    <label for="email" class="block font-semibold">Alamat Email</label>
+                    <input type="email" id="email" name="email" placeholder="Masukkan email Anda" class="mt-1 w-full p-3 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-gray-400">
+                </div>
+
+                <div>
+                    <label for="deskripsi" class="block font-semibold">Deskripsi Proyek</label>
+                    <textarea id="deskripsi" name="deskripsi" rows="4" placeholder="Ceritakan sedikit tentang proyek Anda" class="mt-1 w-full p-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-400"></textarea>
+                </div>
+
+                <div>
+                    <label for="anggaran" class="block font-semibold">Kisaran Anggaran</label>
+                    <input type="text" id="anggaran" name="anggaran" placeholder="Berapa anggaran Anda?" class="mt-1 w-full p-3 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-gray-400">
+                </div>
+
+                <button type="submit" class="w-full bg-yellow-300 font-semibold py-3 rounded-xl">
+                    Kirim Pesan
+                </button>
+            </form>
+        </div>
+    </section>
+    <script>
+        // Simpan preferensi dark mode
+            const toggle = document.getElementById('toggleDarkMode');
+            const isDark = localStorage.getItem('dark-mode') === 'true';
+
+            if (isDark) {
+                document.body.classList.add('dark-mode');
+                toggle.textContent = 'Mode🌙';
+            }
+
+            toggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            const dark = document.body.classList.contains('dark-mode');
+            toggle.textContent = dark ? 'Mode🌙' : 'Mode🌞';
+            localStorage.setItem('dark-mode', dark);
+            });
+
+        document.getElementById("projectForm").addEventListener("submit", function (e) {
+            const nama = document.getElementById("nama").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const deskripsi = document.getElementById("deskripsi").value.trim();
+            const anggaran = document.getElementById("anggaran").value.trim();
+
+            const namaPattern = /^[a-zA-Z\s'-]+$/;
+            const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,}$/i;
+            const anggaranPattern = /^[0-9]+$/;
+
+            if (!nama || !email || !anggaran || !deskripsi) {
+                alert("Harap isi semua (Nama, Email, Deskripsi, dan Anggaran).");
+                e.preventDefault();
+                return;
+            }
+
+            if (!namaPattern.test(nama)) {
+                alert("Nama hanya boleh berisi huruf, spasi, tanda petik satu (') dan tanda hubung (-).");
+                e.preventDefault();
+                return;
+            }
+
+            if (!emailPattern.test(email)) {
+                alert("Format email tidak valid.");
+                e.preventDefault();
+                return;
+            }
+
+            if (!anggaranPattern.test(anggaran)) {
+                alert("Anggaran harus berupa angka.");
+                e.preventDefault();
+                return;
+            }
+
+            if (parseInt(anggaran) < 10000) {
+                alert("Anggaran minimal adalah Rp 10000");
+                e.preventDefault();
+                return;
+            }
+
+            alert("Data Berhasil Dikirim!");
+        });
+    </script>
+</body>
+</html>
