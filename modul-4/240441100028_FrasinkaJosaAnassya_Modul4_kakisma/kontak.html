@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak | Karina Porto</title>
+    <link rel="stylesheet" href="css.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-flex">
+            <div class="logo">
+                <img src="logooo.png" alt="Logo" height="36">
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="beranda.html">Beranda</a></li>
+                    <li><a href="beranda.html#showcase">Showcase</a></li>
+                    <li><a href="beranda.html#studycase">Study Case</a></li>
+                    <li><a href="kontak.html">Client</a></li>
+                    <li><a href="beranda.html#about">Tentang Kami</a></li>
+                    <li><a href="kontak.html" class="active">Kontak</a></li>
+                </ul>
+            </nav>
+            <button id="toggle-theme" aria-label="Toggle dark mode" style="margin-left: 1.5rem; padding: 8px 18px; border-radius: 8px; border: none; background: #161883; color: #ffffff; font-weight: 600; cursor: pointer;">🌙 Dark Mode</button>
+        </div>
+    </header>
+    <main>
+        <section class="contact-section">
+            <div class="container contact-flex">
+                <div class="contact-left">
+                    <div class="circle-img-bg">
+                        <img src="Gambar 1 (1).png" alt="Karina" />
+                    </div>
+                    <div class="contact-desc">
+                        <h2>Karina siap membantu mewujudkan ide dan impian anda</h2>
+                        <p>Dimulai dari riset hingga pengerjaan projek nyata yang berdampak dan bermakna</p>
+                    </div>
+                </div>
+
+                <!-- ✅ FORM TANPA "required" -->
+                <form class="contact-form">
+                    <label>Nama Lengkap
+                        <input type="text" placeholder="Masukkan nama Anda">
+                    </label>
+                    <label>Alamat Email
+                        <input type="email" placeholder="Masukkan email Anda">
+                    </label>
+                    <label>Deskripsi Proyek
+                        <textarea placeholder="Ceritakan sedikit tentang proyek Anda"></textarea>
+                    </label>
+                    <label>Kisaran Anggaran
+                        <input type="text" placeholder="Berapa anggaran Anda?">
+                    </label>
+                    <button type="submit" class="btn btn-yellow" style="width:100%;margin-top:10px;">Kirim Pesan</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="kontak.js"></script>
+</body>
+</html>
