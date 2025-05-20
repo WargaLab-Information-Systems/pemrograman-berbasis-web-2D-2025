@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NeoMerch - Landing Page</title>
+  <link href="./dist/output.css" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background-color: #E4F4E3; }
+  </style>
+</head>
+<body class="font-sans text-gray-800">
+  <!-- Navbar -->
+  <header class=" bg-white shadow fixed top-0 w-full z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center py-4 px-4">
+      <h1 class="text-2xl font-bold text-black">NeoMerch</h1>
+      <nav class="space-x-6 text-sm text-black">
+        <a href="#home" class="hover:text-pink-200">Home</a>
+        <a href="#produk" class="hover:text-pink-200">Produk</a>
+        <a href="#promo" class="hover:text-pink-200">Promo</a>
+        <a href="#kategori" class="hover:text-pink-200">Kategori</a>
+        <a href="#sale" class="hover:text-pink-200">Sale</a>
+      </nav>
+    </div>
+  </header>
+  <section id="home"
+  class="pt-24 pb-16 text-center text-white bg-center bg-no-repeat bg-cover min-h-[70vh] flex flex-col items-center justify-center"
+  style="background-image: url('https://pbs.twimg.com/media/GQl58zeakAAHGQR.jpg:large');">
+  <h2 class="text-4xl font-bold mb-4 bg-black/50 px-4 py-2 rounded">KPOP MERCH SALE</h2>
+  <p class="text-lg mb-6 bg-black/40 px-4 py-2 rounded">Lightstick, Photocard, Boneka, Tiket & lainnya!</p>
+  <a href="#produk" class="bg-pink-200 hover:bg-pink-300 text-gray-800 font-semibold px-6 py-2 rounded-full transition">Belanja Sekarang</a>
+</section>
+
+  <section id="produk" class="py-16 max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">Produk Baru</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div class="bg-white rounded-xl shadow p-4 text-center">
+        <img src="molo.jpg" class="mb-4 rounded">
+        <h3 class="font-semibold">Photocard Molo Mark</h3>
+        <p class="text-sm text-gray-600">Rp 1.000.000</p>
+      </div>
+      <div class="bg-white rounded-xl shadow p-4 text-center">
+        <img src="nct.jpg" class="mb-4 rounded">
+        <h3 class="font-semibold">Lightstick NCT</h3>
+        <p class="text-sm text-gray-600">Rp 800.000</p>
+      </div>
+      <div class="bg-white rounded-xl shadow p-4 text-center">
+        <img src="doll.jpg" class="mb-4 rounded">
+        <h3 class="font-semibold">NCT DOLL</h3>
+        <p class="text-sm text-gray-600">Rp 400.000</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="promo" class="bg-purple-200 py-16 px-4 text-center">
+    <h2 class="text-3xl font-bold text-[#BF360C] mb-6">Promo Spesial</h2>
+    <p class="text-lg mb-6">Diskon hingga <span class="text-red-500 font-bold">50%</span> untuk koleksi terbatas!</p>
+    <a href="#sale" class="bg-white text-[#4CAF50] font-bold px-6 py-3 rounded-full shadow hover:bg-pink-100">Cek Promo</a>
+  </section>
+
+  <section id="kategori" class="py-16 max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-10">Kategori Produk</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center mb-10">
+      <button onclick="showKategori('photocard')" class="bg-red-100 p-4 rounded-xl shadow hover:shadow-md transition font-semibold">Photocard</button>
+      <button onclick="showKategori('lightstick')" class="bg-red-50 p-4 rounded-xl shadow hover:shadow-md transition font-semibold">Lightstick</button>
+      <button onclick="showKategori('boneka')" class="bg-red-100 p-4 rounded-xl shadow hover:shadow-md transition font-semibold">Boneka</button>
+      <button onclick="showKategori('tiket')" class="bg-red-50 p-4 rounded-xl shadow hover:shadow-md transition font-semibold">Tiket</button>
+    </div>
+    <div id="kategori-content" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6"></div>
+  </section>
+
+  <section id="sale" class="bg-white py-16 px-4">
+    <h2 class="text-3xl font-bold text-center mb-10">Sale Terbesar!</h2>
+    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-pink-100 rounded-lg p-6 shadow text-center">
+        <h3 class="text-xl font-bold mb-2">Bundle Photocard</h3>
+        <p>Rp 500.000 → <span class="line-through text-gray-500">Rp 1.000.000</span></p>
+      </div>
+      <div class="bg-gray-300 rounded-lg p-6 shadow text-center">
+        <h3 class="text-xl font-bold mb-2">Diskon Lightstick</h3>
+        <p>Rp 400.000 → <span class="line-through text-gray-500">Rp 800.000</span></p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-green-100 text-gray-500 text-center py-6 text-sm">
+    &copy; 2025 NeoMerch. All rights reserved.
+  </footer>
+
+  <script>
+    const dataKategori = {
+      photocard: [
+        { nama: "Photocard NCT Dream", gambar: "yap.jpg", harga: "Rp 210.000" },
+        { nama: "Photocard NCT 127", gambar: "cilp.jpg", harga: "Rp 212.000" },
+        { nama: "Photocard WAYV", gambar: "wp.jpg", harga: "Rp 211.000" },
+        { nama: "Photocard NCT WISH", gambar: "wip.jpg", harga: "Rp 213.000" },
+        { nama: "Photocard NCT U", gambar: "pnct 127.jpg", harga: "Rp 229.000" },
+      ],
+      lightstick: [
+        { nama: "Lightstick NCT", gambar: "nct.jpg", harga: "Rp 1.250.000" },
+        { nama: "Lightstick NCT Dream", gambar: "dr.jpg", harga: "Rp 1.230.000" },
+        { nama: "Lightstick NCT 127", gambar: "il.jpg", harga: "Rp 1.220.000" },
+        { nama: "Lightstick NCT Wish", gambar: "wic.jpg", harga: "Rp 1.240.000" },
+        { nama: "Lightstick WAYV", gambar: "way.jpg", harga: "Rp 1.210.000" },
+      ],
+      boneka: [
+        { nama: "Boneka NCT", gambar: "doll.jpg", harga: "Rp 975.000" },
+        { nama: "Boneka NCT Dream", gambar: "drim.jpg", harga: "Rp 870.000" },
+        { nama: "Boneka NCT 127", gambar: "127.jpg", harga: "Rp 872.000" },
+        { nama: "Boneka NCT Wish", gambar: "wish.jpg", harga: "Rp 874.000" },
+        { nama: "Boneka WAYV", gambar: "wiy.jpg", harga: "Rp 876.000" },
+      ],
+      tiket: [
+        { nama: "Fanmeeting NCT", gambar: "all.jpg", harga: "Rp 2.150.000" },
+        { nama: "Tiket NCT Dream", gambar: "dream.jpg", harga: "Rp 1.200.000" },
+        { nama: "Tiket NCT 127", gambar: "licil.jpg", harga: "Rp 1.180.000" },
+        { nama: "Tiket NCT Wish", gambar: "wishh.jpg", harga: "Rp 870.000" },
+        { nama: "Fanmeeting WAYV", gambar: "wayv.jpg", harga: "Rp 990.000" },
+      ]
+    };
+
+    function showKategori(nama) {
+      const container = document.getElementById('kategori-content');
+      container.innerHTML = '';
+      dataKategori[nama].forEach(item => {
+        container.innerHTML += `
+          <div class="bg-white p-4 rounded-xl shadow text-center">
+            <img src="${item.gambar}" alt="${item.nama}" class="mb-3 rounded">
+            <h4 class="font-semibold text-sm">${item.nama}</h4>
+            <p class="text-xs text-gray-600">${item.harga}</p>
+          </div>
+        `;
+      });
+    }
+  </script>
+
+</body>
+</html>
