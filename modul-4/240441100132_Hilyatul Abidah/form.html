@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontak | Karina Porto</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800">
+
+  <section class="min-h-screen flex items-center justify-center px-4 py-12">
+    <div class="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div class="flex flex-col items-center md:items-start text-center md:text-left">
+        <div class="w-60 h-60 bg-yellow-300 rounded-b-[50%] flex items-center justify-center overflow-hidden">
+          <img src="women.png" alt="Karina" class="h-52 object-cover" />
+        </div>
+        <h2 class="mt-6 text-2xl font-bold">Karina siap membantu mewujudkan ide dan impian anda</h2>
+        <p class="mt-2 text-gray-600">
+          Dimulai dari riset hingga pengerjaan projek nyata yang berdampak dan bermakna
+        </p>
+      </div>
+
+      <form id="kontakForm" class="bg-white shadow-md rounded-xl p-6 space-y-5 border border-gray-200">
+        <div>
+          <label class="block text-sm font-medium mb-1">Nama Lengkap</label>
+          <input type="text" name="nama" placeholder="Masukkan nama Anda" required
+            class="w-full rounded-lg border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">Alamat Email</label>
+          <input type="email" name="email" placeholder="Masukkan email Anda" required
+            class="w-full rounded-lg border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">Deskripsi Proyek</label>
+          <textarea name="deskripsi" rows="4" placeholder="Ceritakan sedikit tentang proyek Anda" required minlength="10"
+            class="w-full rounded-lg border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"></textarea>
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">Kisaran Anggaran</label>
+          <input type="number" name="anggaran" placeholder="Berapa anggaran Anda?" required min="1000"
+            class="w-full rounded-lg border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+        </div>
+        <button type="submit"
+          class="w-full py-3 rounded-lg bg-yellow-300 text-black font-semibold hover:bg-yellow-400 transition">
+          Kirim Pesan
+        </button>
+        <p id="pesanSukses" class="text-green-600 text-sm font-medium hidden">Pesan berhasil dikirim!</p>
+      </form>
+    </div>
+  </section>
+
+  <script>
+    const form = document.getElementById("kontakForm");
+    const pesanSukses = document.getElementById("pesanSukses");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault(); 
+
+      const nama = form.nama.value.trim();
+      const email = form.email.value.trim();
+      const deskripsi = form.deskripsi.value.trim();
+      const anggaran = form.anggaran.value.trim();
+
+      if (deskripsi.length < 10) {
+        alert("Deskripsi proyek minimal harus 10 karakter.");
+        return;
+      }
+
+      if (isNaN(anggaran) || Number(anggaran) < 1000) {
+        alert("Masukkan anggaran yang valid (minimal 1000).");
+        return;
+      }
+
+      pesanSukses.classList.remove("hidden");
+      form.reset();
+
+      setTimeout(() => {
+        pesanSukses.classList.add("hidden");
+      }, 4000);
+    });
+  </script>
+
+</body>
+</html>
