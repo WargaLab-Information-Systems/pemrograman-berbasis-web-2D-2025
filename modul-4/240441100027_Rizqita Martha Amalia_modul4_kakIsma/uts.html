@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karina Porto</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-flex">
+            <div class="logo">
+                <img src="logooo.png" alt="Logo" height="36">
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#" class="active">Beranda</a></li>
+                    <li><a href="#showcase">Showcase</a></li>
+                    <li><a href="#studycase">Study Case</a></li>
+                    <li><a href="kontak.html">Client</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="hal2.html">Kontak</a></li>
+                </ul>
+            </nav>
+            <button id="toggle-theme" aria-label="Toggle dark mode" style="margin-left: 1.5rem; padding: 8px 18px; border-radius: 8px; border: none; background: #161883; color: #ffffff; font-weight: 600; cursor: pointer;">🌙 Dark Mode</button>
+            <script src="kontak.js"></script>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container hero-flex">
+                <div class="hero-img">
+                    <div class="img-bg">
+                        <img src="Gambar 1 (1).png" alt="Karina" />
+                    </div>
+                </div>
+                <div class="hero-content">
+                    <p class="intro">I'm Karina</p>
+                    <h1>Front-End Developer &amp; UI/UX</h1>
+                    <p class="desc">Membantu perusahaan dalam mengembangkan website atau mobile app untuk solusi bisnis lebih baik</p>
+                    <div class="hero-btns">
+                        <a href="#portfolio" class="btn btn-yellow">Hire Me</a>
+                        <a href="#portfolio" class="btn btn-outline">My Portfolio &rarr;</a>
+                    </div>
+                </div>
+            </div>
+            <p class="hero-sub">Keahlian Saya dalam Menerapkan Teknologi untuk Menyelesaikan Masalah Kompleks</p>
+        </section>
+        <section class="skills" id="studycase">
+            <div class="container">
+                <h2>Skill Saya</h2>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <span class="skill-icon figma"><img src="icon-Figma.png" alt="Figma"></span>
+                        Figma
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon html"><img src="icon-Html 5.png" alt="HTML5"></span>
+                        HTML 5
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon css"><img src="icon-css.png" alt="CSS"></span>
+                        CSS
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon mysql"><img src="icon-SQL.png" alt="MySQL"></span>
+                        MYSQL
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon js"><img src="icon-JavaScript.png" alt="JavaScript"></span>
+                        Javascript
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon react"><img src="icon-React.png" alt="React"></span>
+                        React
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon vscode"><img src="icon-VS CODE.png" alt="VS Code"></span>
+                        Visual Studio Code
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects">
+            <div class="container">
+                <div class="projects-header">
+                    <div id="showcase">
+                        <h2>Proyek Terbaik Saya</h2>
+                        <p class="projects-desc">Beberapa hasil karya terbaik yang pernah saya buat. Klik "Lihat Semua" untuk melihat lebih banyak proyek.</p>
+                    </div>
+                    <a href="#showcase" class="see-all">Lihat Semua &rarr;</a>
+                </div>
+                <div class="project-list">
+                    <!-- Project 1: Teks kiri, gambar kanan -->
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3>E–Commerce Website Design</h3>
+                            <span class="project-sub">Website • Commerce</span>
+                            <p>Website e-commerce UI dibangun menggunakan React &amp; Figma. Fokus pada kemudahan user dan visual yang menarik. Desain responsif, modern, dan terintegrasi dengan API produk secara dinamis.</p>
+                            <a href="#" class="btn btn-yellow">Lihat Proyek</a>
+                        </div>
+                        <img src="Gambar 2 (1).png" alt="E-Commerce Website Design">
+                    </div>
+                    <!-- Project 2: Gambar kiri, teks kanan -->
+                    <div class="project-card reverse">
+                        <img src="Gambar 3.png" alt="Online Course Landing Page">
+                        <div class="project-info">
+                            <h3>Online Course Landing Page</h3>
+                            <span class="project-sub">Website • Course</span>
+                            <p>Website ini dikembangkan menggunakan Laravel sebagai backend dan Filament untuk dashboard admin. Desain modern, mudah digunakan, dan mendukung sistem pembayaran online.</p>
+                            <a href="#" class="btn btn-yellow">Lihat Proyek</a>
+                        </div>
+                    </div>
+                    <!-- Project 3: Teks kiri, gambar kanan -->
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3>Waffle Pay</h3>
+                            <span class="project-sub">UX/UI Design • Fintech</span>
+                            <p>Waffle App didesain dengan pendekatan UX/UI yang fokus pada kemudahan transaksi dan keamanan data pengguna. Prototipe dibuat di Figma dan diuji pada beberapa user.</p>
+                            <a href="#" class="btn btn-yellow">Lihat Proyek</a>
+                        </div>
+                        <img src="Gambar 4.png" alt="Waffle Pay">
+                    </div>
+                    <!-- Project 4: Gambar kiri, teks kanan -->
+                    <div class="project-card reverse">
+                        <img src="Gambar 5.png" alt="Chatbot Mobile App">
+                        <div class="project-info">
+                            <h3>Chatbot Mobile App</h3>
+                            <span class="project-sub">Mobile App • Chatbot</span>
+                            <p>Chatbot Mobile App dirancang dengan pendekatan Design Thinking. Fitur utama: chat interaktif, integrasi API, dan tampilan modern. Prototipe dibuat di Figma dan diuji pada perangkat Android/iOS.</p>
+                            <a href="#" class="btn btn-yellow">Lihat Proyek</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer" id="about">
+        <div class="container footer-flex">
+            <div class="footer-brand">
+                <img src="logooo.png" alt="Logo" height="36">
+                <span>Karina Porto</span>
+                <p>Bangun Ide Hebat Anda Bersama Saya — Siap Berkolaborasi dengan Keahlian yang Terbukti dan Fokus pada Hasil</p>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h4>Tentang Saya</h4>
+                    <ul>
+                        <li>Profil Singkat</li>
+                        <li>Layanan</li>
+                        <li>Proyek Terbaru</li>
+                        <li>Kontak</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Navigasi</h4>
+                    <ul>
+                        <li>Blog / Artikel</li>
+                        <li>Testimoni</li>
+                        <li>Resume / CV</li>
+                        <li>Tools yang Dipakai</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Info Tambahan</h4>
+                    <ul>
+                        <li>Privasi &amp; Ketentuan</li>
+                        <li>Hak Cipta</li>
+                        <li>Sitemap</li>
+                        <li>Aksesibilitas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            &copy; 2025 Karina Porto. All rights reserved. Designed by Erlangga Satrya Husada.
+        </div>
+    </footer>
+</body>
+</html>
