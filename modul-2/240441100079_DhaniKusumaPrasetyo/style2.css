@@ -1,0 +1,154 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    position: sticky;
+    top:0px;
+    z-index: 2;
+}
+nav{
+    background-color: #FFEB55;
+    padding: 10px;
+    display: flex;
+    padding-left:50px;
+
+}
+.logo{
+    object-fit: cover;
+}
+.geprek{
+    font-size: 30px;
+    display: inline;
+    font-family: "poppins";
+    text-justify: 1.5;
+    margin-left:50px ;
+    color: #B8001F;
+}
+.list{
+    display: flex;
+    margin-left:40% ;
+}
+nav ul li{
+    margin-top: 10px;
+    margin-left: 40px;
+    font-size: 20px;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: "poppins";
+    font-weight: bold;
+    color: #B8001F;
+}
+.gambar1{
+    width: 450px;
+    position:absolute;
+    margin-left: 80px;
+    margin-top: 90px;
+    animation: muter 30s linear infinite;
+}
+@keyframes muter {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+#contact{
+    color: #B8001F;
+}
+#Menu{
+    color: black;
+}
+#beranda{
+    color:#B8001F;
+
+}
+#contact:hover{
+    color: black;
+}
+#Menu:hover{
+    color:#B8001F;
+}
+#beranda:hover{
+    color: black;
+}
+.tabelIntro{
+    width: 1300px;
+    height: 300px;
+    margin-top: 120px ;
+    background-color: #FFEB55;
+    border-radius: 30px;
+    border: none;
+}
+.welcome{
+    font-family:"allan";
+    font-size: 45px;
+    color: #B8001F;
+}
+#welcome{
+    margin-top: 40px;
+    margin-bottom: 0px;
+    margin-left: 500px;
+    margin-right: 0px ;
+    padding: 0px;
+}
+.jargon{
+    margin-bottom: 40px;
+    margin-top: 0px;
+    margin-left: 500px;
+    margin-right: 0px ;
+    font-family: "poppins";
+    color: #B8001F;
+    font-size: 35px;
+
+}
+.gambar{
+    width: 200px;
+}
+.baris1{
+    width: 1300px;
+    height: 15px;
+    font-family: poppins;
+    font-size: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ;
+}
+.baris1:hover{
+    width: 1300px;
+    height: 15px;
+    font-family: poppins;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+h3{
+    font-family: "allan";
+    color: #B8001F;
+    font-size: 32px;
+    margin-left: 130px;
+    margin-top: 120px;
+}
+.spasi{
+    width: 50px;
+    background-color: white;
+}
+.data{
+    width: 200px;
+    margin-top: 0px;
+}
+.harga{
+    color: #B8001F;
+}
+#data1{
+    text-align: justify;
+    line-height: 1.5;
+}
+footer{
+    font-size: 14px;
+    display: flex;
+    position: sticky;
+    background-color:#B8001F;
+    padding: 30px;
+    margin-top:10%;
+    color: #FFEB55;   
+    font-family: "poppins";
+}

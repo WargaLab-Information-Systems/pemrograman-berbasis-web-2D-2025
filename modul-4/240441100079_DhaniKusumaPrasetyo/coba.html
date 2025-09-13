@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 id="judul">
+        JavaScript
+    </h1>
+        <h2 class="judul2">
+        JavaScript 
+    </h2>
+    <h2 class="judul2">kalalakalak</h2> -->
+    <p id="text">ini paragraf</p>
+    <button id="tombol"> pengecekan</button>
+
+    <button id="click"> pengecekan</button>
+    <script>
+
+        // document.getElementById("judul").style.color="blue";
+        // document.getElementsByClassName("judul2")[1].style.color="red";
+        let text = document.getElementById("click");
+        text.addEventListener("click", function(){
+            document.getElementById("text").innerHTML ="<h1> ini h1"
+        });
+        let tombol = document.getElementById("tombol");
+            tombol.addEventListener("click", function() {
+                alert("hallo dhani");
+            });
+            
+
+
+
+
+        // var nilai = 80;
+        // if (nilai > 75){
+        //     console.log("Anda Lulus")
+        // }else{
+        //     console.log("Tidak Lulus")
+        // }   
+        
+        // for (let i = 0; i < 5; i++){
+        //     console.log("angka ke - "+ i )
+        // }
+
+        // function siapa(nama){
+        //     return "halo" + nama;
+        // }
+        // console.log(siapa(" dhani"))
+    </script>
+</body>
+</html>
