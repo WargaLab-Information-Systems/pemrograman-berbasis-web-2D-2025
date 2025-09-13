@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu - Warung Makan Syahira</title>
+    <style>
+        /* Body */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+        }
+
+        /* Navigasi */
+        nav {
+            background-color: #a83232;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #f5b041;
+            color: black;
+        }
+
+        /* Menu Section */
+        #menu {
+            padding: 40px 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        #menu h2 {
+            color: #a83232;
+        }
+
+        .menu-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .menu-item {
+            background-color: #fdebd0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+            width: 22%;
+            max-width: 270px;
+            text-align: center;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            transition: 0.7s;
+        }
+        .menu-item img:hover{
+            transform: scale(1.2);
+        }
+
+        .menu-item h3 {
+            color: #a83232;
+            margin-bottom: 10px;
+        }
+
+        .harga {
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Responsif */
+        @media (max-width: 768px) {
+            .menu-item {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .menu-item {
+                width: 90%;
+            }
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #a83232;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="pesan.html">Pesan</a>
+        <a href="tentang.html">Tentang</a>
+    </nav>
+
+    <section id="menu">
+        <h2>Menu Makanan & Minuman</h2>
+        <div class="menu-container">
+            <!-- 4 menu per baris, total ada 11 menu -->
+            <div class="menu-item">
+                <img src="bebek.jpg" alt="Nasi Bebek Bumbu Hitam">
+                <h3>Nasi Bebek Bumbu Hitam</h3>
+                <p>Bebek kampung dengan bumbu khas Madura.</p>
+                <span class="harga">Rp18.000</span>
+            </div>
+    
+            <div class="menu-item">
+                <img src="ayam.jpg" alt="Nasi Ayam Bumbu Hitam">
+                <h3>Nasi Ayam Bumbu Hitam</h3>
+                <p>Ayam goreng berbumbu hitam dengan rempah khas.</p>
+                <span class="harga">Rp9.000</span>
+            </div>
+    
+            <div class="menu-item">
+                <img src="richese.jpg" alt="Nasi Richese">
+                <h3>Nasi Richese</h3>
+                <p>Ayam crispy dengan saus pedas ala Richese.</p>
+                <span class="harga">Rp12.000</span>
+            </div>
+    
+            <div class="menu-item">
+                <img src="geprek.jpg" alt="Nasi Geprek">
+                <h3>Nasi Geprek</h3>
+                <p>Ayam geprek pedas Spesial Bumbu Hitam.</p>
+                <span class="harga">Rp9.000</span>
+            </div>
+    
+            <div class="menu-item">
+                <img src="ampela.jpeg" alt="Nasi Ampela Ati">
+                <h3>Nasi Ampela Ati</h3>
+                <p>ampela Ati Spesial Bumbu Hitam.</p>
+                <span class="harga">Rp9.000</span>
+            </div>
+    
+            <div class="menu-item">
+                <img src="lele.jpg" alt="Nasi Lele">
+                <h3>Nasi Lele</h3>
+                <p>Lele goreng Spesial Bumbu Hitam.</p>
+                <span class="harga">Rp9.000</span>
+            </div>
+    
+            <div class="menu-item">
+                <img src="telur.jpg" alt="Nasi Telur">
+                <h3>Nasi Telur</h3>
+                <p>Telur dadar Spesial Bumbu Hitam.</p>
+                <span class="harga">Rp6.000</span>
+            </div>
+    
+            <div class="menu-item">
+                <img src="tahutempe.jpg" alt="Nasi Tahu Tempe">
+                <h3>Nasi Tahu Tempe</h3>
+                <p>Paket hemat Tahu Tempe Spesial Bumbu Hitam.</p>
+                <span class="harga">Rp5.000</span>
+            </div>
+    
+            <div class="menu-item">
+                <img src="caomerah.jpg" alt="Es Cao Merah">
+                <h3>Cah Kangkung</h3>
+                <p>Kangkung segar ditumis dengan bawang dan cabai.</p>
+                <span class="harga">Rp3.000</span>
+            </div>
+    
+            <div class="menu-item">
+                <img src="caohitam.jpg" alt="Es Cao Hitam">
+                <h3>Bakso</h3>
+                <p>Bakso sapi dengan kuah gurih dan mie.</p>
+                <span class="harga">Rp3.000</span>
+            </div>
+    
+            <div class="menu-item">
+                <img src="teh.jpg" alt="Es Teh">
+                <h3>Mie Goreng</h3>
+                <p>Mie goreng spesial dengan sayur dan telur.</p>
+                <span class="harga">Rp3.000</span>
+            </div>
+            <div class="menu-item">
+                <img src="popice.jpg" alt="Pop Ice">
+                <h3>Mie Goreng</h3>
+                <p>Mie goreng spesial dengan sayur dan telur.</p>
+                <span class="harga">Rp3.000</span>
+            </div>
+            <div class="menu-item">
+                <img src="nutrisari.jpg" alt="Nutrisari">
+                <h3>Mie Goreng</h3>
+                <p>Mie goreng spesial dengan sayur dan telur.</p>
+                <span class="harga">Rp3.000</span>
+            </div>
+            <div class="menu-item">
+                <img src="marimas.jpg" alt="Marimas">
+                <h3>Mie Goreng</h3>
+                <p>Mie goreng spesial dengan sayur dan telur.</p>
+                <span class="harga">Rp2.000</span>
+            </div>
+            <div class="menu-item">
+                <img src="sisri.jpg" alt="Sisri">
+                <h3>Mie Goreng</h3>
+                <p>Mie goreng spesial dengan sayur dan telur.</p>
+                <span class="harga">Rp2.000</span>
+            </div>
+            <div class="menu-item">
+                <img src="bariklana.jpg" alt="Air mineral">
+                <h3>Air mineral</h3>
+                <p>Air mineral bersih diproduksi oleh PP Al amin.</p>
+                <span class="harga">Rp2.000</span>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Warung Makan Syahira.</p>
+    </footer>
+</body>
+</html>
+
+

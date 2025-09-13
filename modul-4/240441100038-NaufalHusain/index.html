@@ -1,0 +1,309 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Karina Porto
+  </title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .dark-mode {
+      background-color: #000;
+      color: white;
+    }
+    
+    .dark-mode a {
+      color: #fff;
+    }
+    .dark-mode footer {
+      background-color: #000;
+    }
+    .dark-mode header .text-black {
+      color: black; /* Keep header text color black in dark mode */
+    }
+    .dark-mode main {
+      background-color: #000; /* Ensure main content has dark background */
+    }
+    .dark-mode p, .dark-mode h1, .dark-mode h2, .dark-mode h3 {
+      color: white; /* Ensure text is white in dark mode */
+    }
+    .dark-mode .bg-white {
+      background-color: #2a2a2a; /* Change white backgrounds to a darker shade */
+    }
+    .dark-mode .text-gray-500 {
+      color: #b0b0b0; /* Change gray text to a lighter shade */
+    }
+    .dark-mode .skill-section {
+      background-color: #000; /* Dark background for the skill section */
+    }
+    .dark-mode .container{
+      background-attachment: #000;
+    }
+  </style>
+ </head>
+  <body class="">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+      <nav class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex items-center justify-between h-16">
+        <div class="flex items-center space-x-2">
+          <img src="Logo 1.png" alt="Logo" class="w-6 h-6" />
+          <span class="font-semibold text-lg select-none">Karina Porto</span>
+        </div>
+        <ul class="hidden sm:flex space-x-8 text-sm font-normal text-black" >
+          <li><a href="#" class="text-[#FFD966]">Beranda</a></li>
+          <li><a href="#" class="hover:text-gray-700 transition">Showcase</a></li>
+          <li><a href="#" class="hover:text-gray-700 transition">Study Case</a></li>
+          <li><a href="#" class="hover:text-gray-700 transition">Client</a></li>
+          <li><a href="#" class="hover:text-gray-700 transition">Tentang Kami</a></li>
+          <button id="toggleDarkMode" class="bg-[#FFD966] text-black rounded-full px-4 py-1">Mode🌞</button>
+        </ul>
+      </nav>
+    </header>
+    <!-- Hero Section -->
+    <main class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 mt-10 sm:mt-16">
+      <section class="flex flex-col sm:flex-row items-center gap-10 sm:gap-20">
+        <div class="w-full sm:w-1/2 flex justify-center">
+          <img src="Gambar 1 (1).png" alt="Karina" class="max-w-full h-[450px] w-[500px]" />
+        </div>
+        <div class="w-full sm:w-1/2 max-w-xl flex flex-col justify-center h-[450px]">
+          <p class="text-sm text-black mb-1 select-none">I’m Karina</p>
+          <h1 class="font-extrabold text-3xl sm:text-4xl leading-tight text-black mb-3 select-none">
+            Front-End Developer<br />& UI/UX
+          </h1>
+          <p class="text-gray-500 text-sm sm:text-base mb-6 select-none">
+            Membantu perusahaan dalam mengembangkan<br />website atau mobile app untuk tumbuh lebih besar
+          </p>
+          <div class="flex items-center space-x-6">
+            <a href="halaman2.html">
+              <button class="bg-[#FFD966] text-black font-semibold rounded-full px-6 py-2 text-sm sm:text-base hover:bg-yellow-400 transition select-none">Hire Me</button>
+            </a>
+            <a href="#" class="text-black text-sm sm:text-base flex items-center space-x-1 hover:underline select-none">
+              <span>My Portfolio</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <line x1="7" y1="17" x2="17" y2="7" />
+                <polyline points="7 7 17 7 17 17" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Skill Section -->
+      <section class="mt-16 text-center max-w-3xl mx-auto">
+        <p class="text-black text-sm sm:text-base mb-2 select-none">Keahlian Saya dalam Menerapkan Teknologi untuk Menyelesaikan Masalah Kompleks</p>
+        <h2 class="font-extrabold text-xl sm:text-2xl text-black select-none">Skill Saya</h2>
+      </section>
+      <!-- Skill Items -->
+      <section class=" flex flex-col items-center py-10">
+        <div class="w-full max-w-[1200px] px-4">
+          <div class="flex flex-wrap justify-center gap-10">
+            <!-- Skill Card Template -->
+            <div class="flex items-center gap-3 bg-white rounded-xl px-5 py-3.5 shadow-sm min-w-[110px] ">
+              <div class="w-12 h-12 rounded-full bg-[#A788FA] flex items-center justify-center">
+                <img src="icon-Figma.png" alt="Figma" class="w-4.5 h-4.5 p-1" />
+              </div>
+              <span class="text-[14px] font-normal text-black">Figma</span>
+            </div>
+            <div class="flex items-center gap-3 bg-white rounded-xl px-5 py-3.5 shadow-sm min-w-[110px]">
+              <div class="w-12 h-12 rounded-full bg-[#FDE047] flex items-center justify-center">
+                <img src="icon-Html 5.png" alt="html5" class="w-4.5 h-4.5 p-1" />
+              </div>
+              <span class="text-[14px] font-normal text-black">HTML 5</span>
+            </div>
+            <div class="flex items-center gap-3 bg-white rounded-xl px-5 py-3.5 shadow-sm min-w-[110px]">
+              <div class="w-12 h-12 rounded-full bg-black flex items-center justify-center">
+                <img src="icon-css.png" alt="CSS" class="w-4.5 h-4.5 p-1" />
+              </div>
+              <span class="text-[14px] font-normal text-black">CSS</span>
+            </div>
+            <div class="flex items-center gap-3 bg-white rounded-xl px-5 py-3.5 shadow-sm min-w-[110px]">
+              <div class="w-12 h-12 rounded-full bg-[#F9A8D4] flex items-center justify-center">
+                <img src="icon-SQL.png" alt="MY SQL" class="w-4.5 h-4.5 p-1" />
+              </div>
+              <span class="text-[14px] font-normal text-black">MYSQL</span>
+            </div>
+            <!-- Tambah item lain seperti di atas sesuai kebutuhan -->
+          </div>
+        </div>
+      </section>
+      <section class="flex flex-col items-center py-10">
+        <div class="w-full max-w-[1200px] px-4">
+          <div class="flex flex-wrap justify-center gap-10">
+            <!-- Skill Card Template -->
+            <div class="flex items-center gap-3 bg-white rounded-xl px-5 py-3.5 shadow-sm min-w-[110px]">
+              <div class="w-12 h-12 rounded-full bg-black flex items-center justify-center">
+                <img src="icon-JavaScript.png" alt="Javascript" class="w-4.5 h-4.5 p-1" />
+              </div>
+              <span class="text-[14px] font-normal text-black">Javascript</span>
+            </div>
+            <div class="flex items-center gap-3 bg-white rounded-xl px-5 py-3.5 shadow-sm min-w-[110px]">
+              <div class="w-12 h-12 rounded-full bg-green-400 flex items-center justify-center">
+                <img src="icon-React.png" alt="React" class="w-4.5 h-4.5 p-1" />
+              </div>
+              <span class="text-[14px] font-normal text-black">React</span>
+            </div>
+            <div class="flex items-center gap-3 bg-white rounded-xl px-5 py-3.5 shadow-sm min-w-[110px]">
+              <div class="w-12 h-12 rounded-full bg-[#7c6fff] flex items-center justify-center">
+                <img src="icon-VS CODE.png" alt="Visual Studio Code" class="w-4.5 h-4.5 p-1" />
+              </div>
+              <span class="text-[14px] font-normal text-black">Visual Studio Code</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="max-w-7xl mx-auto px-6 py-12 md:py-20">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+          <div class="max-w-xl">
+            <h2 class="text-2xl md:text-3xl font-semibold leading-tight mb-2">Proyek Terbaik Saya</h2>
+            <p class="text-sm md:text-base text-[#6B7280] leading-relaxed">
+              Beberapa hasil karya kami yang paling kami banggakan. Yuk, intip apa yang sudah kami buat!
+            </p>
+          </div>
+          <a href="#" class="mt-6 md:mt-0 text-sm md:text-base font-normal text-[#111827] flex items-center space-x-1 hover:underline">
+            <span>Lihat Semua</span>
+            <svg class="w-4 h-4 transform rotate-[-45deg]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <!-- Project Example 1 -->
+      <section class="max-w-7xl mx-auto px-6 py-12 md:py-20 flex flex-col md:flex-row items-start gap-12 md:gap-24">
+        <div class="max-w-xl flex flex-col justify-start">
+          <h2 class="font-extrabold text-2xl leading-tight mb-2">E-Commerce Website Design</h2>
+          <p class="text-[#6b7280] font-semibold text-sm mb-6">Website Development</p>
+          <p class="text-[14px] leading-relaxed mb-8">
+            Website e-commerce ini dibangun menggunakan React.js dengan dukungan React Router untuk navigasi dan Redux untuk manajemen state. Desain responsif dan modern dibuat menggunakan Tailwind CSS, serta terintegrasi dengan API untuk menampilkan produk secara dinamis dan real-time.
+          </p>
+          <button class="bg-yellow-400 text-[#1e1e1e] font-semibold rounded-full px-6 py-3 hover:bg-yellow-300 transition w-max">Lihat Projek</button>
+        </div>
+        <div class="max-w-[480px] w-full rounded-[40px] overflow-hidden shadow-inner shadow-[#d7d9e6] flex-shrink-0">
+          <img src="Gambar 2 (1).png" alt="Mockup" class="w-full h-auto block" />
+        </div>
+      </section>
+      <section class="max-w-7xl mx-auto px-6 py-12 md:py-20 flex flex-col md:flex-row items-start gap-12 md:gap-24">
+        <div class="max-w-[480px] w-full rounded-[40px] overflow-hidden shadow-inner shadow-[#d7d9e6] flex-shrink-0">
+          <img src="Gambar 2 (1).png" alt="Mockup" class="w-full h-auto block" />
+        </div>
+        <div class="max-w-xl flex flex-col justify-start">
+          <h2 class="font-extrabold text-2xl leading-tight mb-2">Online Course Landing Page</h2>
+          <p class="text-[#6b7280] font-semibold text-sm mb-6">Website Development</p>
+          <p class="text-[14px] leading-relaxed mb-8">
+            Website ini dikembangkan menggunakan Laravel sebagai fondasi utama dalam pengelolaan logika backend. Dengan integrasi Filament, sistem dashboard admin dapat dibuat secara cepat, efisien, dan user-friendly. Data disimpan dan dikelola menggunakan MySQL, sementara PHP berperan sebagai bahasa pemrograman inti yang menjalankan seluruh proses server-side. Website ini juga dilengkapi dengan fitur autentikasi, CRUD dinamis, serta validasi data yang kuat untuk memastikan keandalan dan keamanan sistem. Antarmuka dibuat responsif agar nyaman diakses dari berbagai perangkat.
+          </p>
+          <button class="bg-yellow-400 text-[#1e1e1e] font-semibold rounded-full px-6 py-3 hover:bg-yellow-300 transition w-max">Lihat Projek</button>
+        </div>
+      </section>
+      <section class="max-w-7xl mx-auto px-6 py-12 md:py-20 flex flex-col md:flex-row items-start gap-12 md:gap-24">
+        <div class="max-w-xl flex flex-col justify-start">
+          <h2 class="font-extrabold text-2xl leading-tight mb-2">Waffle Pay</h2>
+          <p class="text-[#6b7280] font-semibold text-sm mb-6">UI/UX Design•APP Deveelopment</p>
+          <p class="text-[14px] leading-relaxed mb-8">
+            Waffle App dirancang denggan pendekatan UI/UX yang mengutamakan kesederhanaan dan efisiensi pengguna.
+            Proses desain dimulai dengan riset kebutuhan pengguna dan pembuatan user persona untuk memahami tujuan aplikasi.
+            Wireframe dan user flow dikembangkan menggunakan Figma, diikuti dengan desain high-fidelity yang mengedepankan konsistensi visual dan akses dan aksesibilitas.
+            Prototipe interaktif dibuat untuk pengujian usability, memastikan setiap fitur dapat diakses dengan mudah dan intutif.
+            Desain responsif disiapkan agar optimal di berbagai ukuran layar, terutama perangkat mobile.
+          </p>
+          <button class="bg-yellow-400 text-[#1e1e1e] font-semibold rounded-full px-6 py-3 hover:bg-yellow-300 transition w-max">Lihat Projek</button>
+        </div>
+        <div class="max-w-[480px] w-full rounded-[40px] overflow-hidden shadow-inner shadow-[#d7d9e6] flex-shrink-0">
+          <img src="Gambar 2 (1).png" alt="Mockup" class="w-full h-auto block" />
+        </div>
+      </section>
+      <section class="max-w-7xl mx-auto px-6 py-12 md:py-20 flex flex-col md:flex-row items-start gap-12 md:gap-24">
+        <div class="max-w-[480px] w-full rounded-[40px] overflow-hidden shadow-inner shadow-[#d7d9e6] flex-shrink-0">
+          <img src="Gambar 2 (1).png" alt="Mockup" class="w-full h-auto block" />
+        </div>
+        <div class="max-w-xl flex flex-col justify-start">
+          <h2 class="font-extrabold text-2xl leading-tight mb-2">Chatbot Mobile App</h2>
+          <p class="text-[#6b7280] font-semibold text-sm mb-6">UI/UX Design•APP Deveelopment</p>
+          <p class="text-[14px] leading-relaxed mb-8">
+            Chatbot Mobile App ini dirancang dengan pendekatan Design Thinking, dimulai dari proses empati terhadap kebutuhan pengguna melalui observasi dan wawancara.
+            Setelah itu, dilakukan perumusan masalah, pembuatan ide solusi, serta sketsa wireframe.
+            Desain antarmuka dikembangkan menggunakan Figma, dengan fokus pada interaksi percakapan yang intutif dan ramah pengguna.
+            Prototipe diuji melalui usability testing untuk memastikan alur obrolan mudah di pahami.
+            Desain akhir dibuat responsif, dengan perhatian pada tipografi, kontras, dan kecepatan akses, sehingga mendukung pengalaman pengguna yang optimal di perangkat mobile.
+          </p>
+          <button class="bg-yellow-400 text-[#1e1e1e] font-semibold rounded-full px-6 py-3 hover:bg-yellow-300 transition w-max">Lihat Projek</button>
+        </div>
+      </section>
+    </main>
+    <footer class="w-full bg-gradient-to-br from-[#0a0a23] via-[#0a0a23] to-[#1a1a3a] pt-12 pb-8 px-6 md:px-20 lg:px-32">
+  <div class="flex flex-col md:flex-row md:justify-between w-full">
+    <div class="md:flex-1 max-w-xs">
+      <div class="flex items-center space-x-3 mb-4">
+        <img
+          alt="Karina Porto logo icon"
+          class="w-7 h-7"
+          height="28"
+          src="Logo 1.png"
+          width="28"
+        />
+        <span class="text-white text-lg font-semibold">Karina Porto</span>
+      </div>
+      <p class="text-sm leading-relaxed text-left max-w-[320px] text-white">
+        Bangun Ide Hebat Anda Bersama Saya — Siap Berkolaborasi dengan Keahlian yang Terbukti dan Fokus pada Hasil
+      </p>
+    </div>
+    <div class="flex flex-wrap md:flex-nowrap gap-x-20 gap-y-6 mt-10 md:mt-0 md:flex-1 md:justify-end">
+      <div class="min-w-[120px]">
+        <h3 class="text-white font-semibold mb-3 text-sm">Tentang Saya</h3>
+        <ul class="space-y-2 text-sm text-gray-300">
+          <li>Profil Singkat</li>
+          <li>Layanan</li>
+          <li>Proyek Terbaru</li>
+          <li>Kontak</li>
+        </ul>
+      </div>
+      <div class="min-w-[120px]">
+        <h3 class="text-white font-semibold mb-3 text-sm">Navigasi</h3>
+        <ul class="space-y-2 text-sm text-gray-300">
+          <li>Blog / Artikel</li>
+          <li>Testimoni</li>
+          <li>Resume / CV</li>
+          <li>Tools yang Dipakai</li>
+        </ul>
+      </div>
+      <div class="min-w-[120px]">
+        <h3 class="text-white font-semibold mb-3 text-sm">Info Tambahan</h3>
+        <ul class="space-y-2 text-sm text-gray-300">
+          <li>Privasi &amp; Ketentuan</li>
+          <li>Hak Cipta</li>
+          <li>Sitemap</li>
+          <li>Aksesibilitas</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- FOOTER COPYRIGHT -->
+<div class="w-full bg-gradient-to-br from-[#0a0a23] via-[#0a0a23] to-[#1a1a3a] text-center text-xs text-gray-400 px-6 md:px-20 lg:px-32 py-4">
+  © 2025 Karina Porto. All rights reserved. Designed by Erlangga Satrya Husada.
+</div>
+<script>
+  // Simpan preferensi dark mode
+    const toggle = document.getElementById('toggleDarkMode');
+    const isDark = localStorage.getItem('dark-mode') === 'true';
+
+    if (isDark) {
+      document.body.classList.add('dark-mode');
+      toggle.textContent = 'Mode🌙';
+    }
+
+      toggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        const dark = document.body.classList.contains('dark-mode');
+        toggle.textContent = dark ? 'Mode🌙' : 'Mode🌞';
+        localStorage.setItem('dark-mode', dark);
+      });
+</script>
+ </body>
+</html>
